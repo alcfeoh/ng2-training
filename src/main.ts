@@ -4,10 +4,10 @@ import { environment } from './app/';
 import { HelloComponent } from './app/hello';
 import { BindingsComponent } from './app/bindings';
 import { ModelComponent } from './app/model';
+import { NgforComponent } from './app/ngfor';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(HelloComponent);
 

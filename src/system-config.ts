@@ -40,6 +40,7 @@ const barrels: string[] = [
   'app/ngfor',
   'app/http',
   'app/ngif',
+  'app/communication',
   /** @cli-barrel */
 ];
 

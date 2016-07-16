@@ -7,6 +7,7 @@ import { ModelComponent } from './app/model';
 import { NgforComponent } from './app/ngfor';
 import { HttpComponent } from './app/http';
 import { NgifComponent } from './app/ngif';
+import { CommunicationComponent } from './app/communication';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 if (environment.production) {

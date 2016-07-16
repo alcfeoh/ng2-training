@@ -38,6 +38,7 @@ const barrels: string[] = [
   'app/model',
   'app/bindings',
   'app/ngfor',
+  'app/http',
   /** @cli-barrel */
 ];
 

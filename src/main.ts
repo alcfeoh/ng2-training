@@ -15,5 +15,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(NgifComponent, [ HTTP_PROVIDERS ]);
+bootstrap(HelloComponent, [ HTTP_PROVIDERS ]);
 

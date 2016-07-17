@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HelloWorld } from './helloWorld.component'
+import { HelloWorld } from './helloWorld.component';
 
 @Component({
   moduleId: module.id,

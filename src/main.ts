@@ -8,6 +8,7 @@ import { NgforComponent } from './app/ngfor';
 import { HttpComponent } from './app/http';
 import { NgifComponent } from './app/ngif';
 import { CommunicationComponent } from './app/communication';
+import { CommunicationComponent2 } from './app/communication';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 if (environment.production) {

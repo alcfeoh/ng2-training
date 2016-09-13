@@ -42,6 +42,7 @@ const barrels: string[] = [
   'app/ngif',
   'app/communication',
   'app/hiding',
+  'app/ngswitch',
   /** @cli-barrel */
 ];
 

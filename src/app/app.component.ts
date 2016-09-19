@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<app-ngswitch></app-ngswitch>'
+  template: '<app-hello></app-hello>'
 })
 export class AppComponent {
   title = 'app works!';

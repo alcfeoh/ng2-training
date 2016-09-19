@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import '../rxjs-operators';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-http',
   template: ` 
       <input type="button" class="btn btn-primary" (click)="loadData()" value="Load Data"/>

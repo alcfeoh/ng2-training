@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-model',
-  templateUrl: 'model.component.html',
-  styleUrls: ['model.component.css']
+  templateUrl: 'model.component.html'
 })
 export class ModelComponent {
 

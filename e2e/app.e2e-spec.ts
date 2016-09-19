@@ -1,10 +1,10 @@
-import { Ng2TrainingPage } from './app.po';
+import { MigrationRpojectPage } from './app.po';
 
-describe('ng2-training App', function() {
-  let page: Ng2TrainingPage;
+describe('migration-rpoject App', function() {
+  let page: MigrationRpojectPage;
 
   beforeEach(() => {
-    page = new Ng2TrainingPage();
+    page = new MigrationRpojectPage();
   });
 
   it('should display message saying app works', () => {

@@ -1,4 +1,6 @@
-export class Ng2TrainingPage {
+import { browser, element, by } from 'protractor/globals';
+
+export class MigrationRpojectPage {
   navigateTo() {
     return browser.get('/');
   }

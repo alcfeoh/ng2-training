@@ -18,8 +18,6 @@ import { FormsComponent } from './forms/forms.component';
 import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, BindingsComponent,

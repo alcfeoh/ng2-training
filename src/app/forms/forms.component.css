@@ -1,0 +1,12 @@
+input{
+  padding: 5px;
+  margin: 5px;
+}
+
+input[type=text].ng-valid[required] {
+  border-left: 5px solid #42A948; /* green */
+}
+
+input[type=text].ng-invalid {
+  border-left: 5px solid #a94442; /* red */
+}

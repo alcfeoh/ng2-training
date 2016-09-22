@@ -13,6 +13,7 @@ import {ModelComponent} from "./model/model.component";
 import {NgforComponent} from "./ngfor/ngfor.component";
 import {NgifComponent} from "./ngif/ngif.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import {NgswitchComponent} from "./ngswitch/ngswitch.component";
     ModelComponent,
     NgforComponent,
     NgifComponent,
-    NgswitchComponent
+    NgswitchComponent, FormsComponent
   ],
   imports: [
     BrowserModule,

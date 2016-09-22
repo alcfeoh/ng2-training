@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -14,25 +15,23 @@ import {NgforComponent} from "./ngfor/ngfor.component";
 import {NgifComponent} from "./ngif/ngif.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { FormsComponent } from './forms/forms.component';
+import { routing } from './app.routing';
+import { RouterComponent } from './router/router.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HelloComponent,
-    BindingsComponent,
+    AppComponent, HelloComponent, BindingsComponent,
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
-    HidingComponent,
-    HttpComponent,
-    ModelComponent,
-    NgforComponent,
-    NgifComponent,
-    NgswitchComponent, FormsComponent
+    HidingComponent, HttpComponent, ModelComponent,
+    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule //, routing
   ],
   providers: [],
   bootstrap: [AppComponent]

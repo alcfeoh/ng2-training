@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <label>Name : </label>
+    <input type="text" [(ngModel)]="person.name" />
+  </div>
+  <div>
+    <label>First name : </label>
+    <input type="text" [(ngModel)]="person.firstName" />
+  </div>
+  <div>The person full name is: {{getName()}}</div>
+</div>

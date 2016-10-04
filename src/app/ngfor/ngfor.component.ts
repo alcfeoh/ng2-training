@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-ngfor',
   template: ` 
       <ul>
-        <li *ngFor="let person of persons">
-          {{ getFullName(person) }}
+        <li *ngFor="let person of persons; let i = #index">
+          {{ i + " - " +getFullName(person) }}
         </li>
       </ul>`
 })

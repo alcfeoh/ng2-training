@@ -1,0 +1,5 @@
+Type at least 4 characters:
+<input type="text" [(ngModel)]="value" />
+<p style="color: red;" *ngIf="value && value.length > 4">
+  The input value is not long enough
+</p>

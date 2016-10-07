@@ -17,6 +17,7 @@ import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { FormsComponent } from './forms/forms.component';
 import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
+//import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { RouterComponent } from './router/router.component';
     FormsModule,
     HttpModule,
     RouterModule //, routing
+    //,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

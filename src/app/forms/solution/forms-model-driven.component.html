@@ -1,0 +1,21 @@
+<form [formGroup]="registerForm">
+  <label>Firstname:</label>
+  <input type="text" name="firstname" formControlName="firstname" >
+  <br/>
+  <label>Lastname:</label>
+  <input type="text" name="lastname" formControlName="lastname">
+  <br/>
+  <label>Street:</label>
+  <input type="text" name="street" formControlName="street">
+  <br/>
+  <label>Zip:</label>
+  <input type="text" name="zip" formControlName="zip">
+  <div class="alert" *ngIf=" !registerForm.controls.zip.pristine && registerForm.controls.zip.errors">
+    Zipcode must have 5 digits
+  </div>
+  <br/>
+  <label>City:</label>
+  <input type="text" name="city" formControlName="city">
+  <br/>
+  <button type="submit">Submit</button>
+</form>

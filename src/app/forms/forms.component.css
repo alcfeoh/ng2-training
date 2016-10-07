@@ -10,3 +10,8 @@ input[type=text].ng-valid[required] {
 input[type=text].ng-invalid {
   border-left: 5px solid #a94442; /* red */
 }
+.alert {
+  padding: 10px;
+  color: darkred;
+  background-color: tomato;
+}

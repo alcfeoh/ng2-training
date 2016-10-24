@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-hello',
   template: `
     <div>
-      <h2 highlight>Hello {{name}}</h2>
+      <h2>Hello {{name}}</h2>
     </div>
   `
 })

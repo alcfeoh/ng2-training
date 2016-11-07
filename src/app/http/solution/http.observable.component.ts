@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import '../rxjs-operators';
+import { Http } from '@angular/http';
+import '../../rxjs-operators';
 
 @Component({
   selector: 'app-http',
@@ -10,18 +11,21 @@ import '../rxjs-operators';
       </ul>`
 
 })
-export class HttpComponent {
+export class HttpObservableComponent {
 
   persons = [];
 
-  constructor() {}
+  constructor(private http: Http) {}
 
   getFullName(person) {
     return person.firstName + " " + person.lastName;
   }
 
   loadData(){
-    // Use this method to load data from the following URL:
-    // http://interstate21.com/demos/angular/index.php
+    this.http.get("http://interstate21.com/demos/angular/index.php")
+      .map(res => res.json())
+      .subscribe(res => {
+        this.persons = res;
+      });
   }
 }

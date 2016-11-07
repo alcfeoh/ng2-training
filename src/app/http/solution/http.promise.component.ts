@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import '../rxjs-operators';
+import { Http } from '@angular/http';
+import '../../rxjs-operators';
 
 @Component({
-  selector: 'app-http',
+  selector: 'app-http-prom',
   template: ` 
       <input type="button" class="btn btn-primary" (click)="loadData()" value="Load Data"/>
       <ul>
@@ -10,18 +11,22 @@ import '../rxjs-operators';
       </ul>`
 
 })
-export class HttpComponent {
+export class HttpPromiseComponent {
 
   persons = [];
 
-  constructor() {}
+  constructor(private http: Http) {}
 
   getFullName(person) {
     return person.firstName + " " + person.lastName;
   }
 
   loadData(){
-    // Use this method to load data from the following URL:
-    // http://interstate21.com/demos/angular/index.php
+    this.http.get("http://interstate21.com/demos/angular/index.php")
+      .toPromise()
+      .then(res => {
+        this.persons = res.json();
+      });
+
   }
 }

@@ -17,6 +17,7 @@ import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { FormsComponent } from './forms/forms.component';
 import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
+import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -24,7 +25,7 @@ import { RouterComponent } from './router/router.component';
     AppComponent, HelloComponent, BindingsComponent,
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
-    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent
+    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent
   ],
   imports: [
     BrowserModule,

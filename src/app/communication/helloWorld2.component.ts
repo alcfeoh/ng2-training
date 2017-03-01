@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'hello-world2',
@@ -14,7 +14,7 @@ export class HelloWorld2 {
   message : String;
 
   @Output()
-  onClick : EventEmitter<string> = new EventEmitter();
+  onClick : EventEmitter<string> = new EventEmitter<string>();
 
   handleClick(){
     this.onClick.emit("I got clicked pretty bad");

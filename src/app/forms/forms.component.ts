@@ -9,8 +9,7 @@ export class FormsComponent {
 
   constructor() {}
 
-  logForm(value: any) {
+  logForm(value) {
     console.log(value);
   }
-
 }

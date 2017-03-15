@@ -19,6 +19,7 @@ import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
 import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
 import { PromiseExampleComponent } from './promise-example/promise-example.component';
+import {AuthGuard} from "./router/auth-guard-service";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -32,10 +33,10 @@ import { PromiseExampleComponent } from './promise-example/promise-example.compo
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule //, routing
+    RouterModule, routing
     //,ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

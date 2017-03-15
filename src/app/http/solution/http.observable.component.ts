@@ -18,7 +18,7 @@ export class HttpObservableComponent {
   constructor(private http: Http) {}
 
   getFullName(person) {
-    return person.firstName + " " + person.lastName;
+    return person.name;
   }
 
   loadData(){

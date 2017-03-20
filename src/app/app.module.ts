@@ -20,6 +20,8 @@ import { RouterComponent } from './router/router.component';
 import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
 import { PromiseExampleComponent } from './promise-example/promise-example.component';
 import {AuthGuard} from "./router/auth-guard-service";
+import {LoginService} from "./router/login/login.service";
+import {LoginComponent} from "./router/login/login.component";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -27,7 +29,8 @@ import {AuthGuard} from "./router/auth-guard-service";
     AppComponent, HelloComponent, BindingsComponent,
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
-    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, PromiseExampleComponent
+    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
+    PromiseExampleComponent, LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import {AuthGuard} from "./router/auth-guard-service";
     RouterModule, routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

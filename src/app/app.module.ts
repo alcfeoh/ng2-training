@@ -22,6 +22,7 @@ import { PromiseExampleComponent } from './promise-example/promise-example.compo
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
+import {ObservableExampleComponent} from "./observable-example/observable-example.component";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -30,7 +31,7 @@ import {LoginComponent} from "./router/login/login.component";
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
     NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, LoginComponent
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent
   ],
   imports: [
     BrowserModule,

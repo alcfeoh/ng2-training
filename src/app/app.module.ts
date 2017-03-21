@@ -11,7 +11,6 @@ import * as comm from './communication';
 import {HidingComponent} from "./hiding/hiding.component";
 import {HttpComponent} from "./http/http.component";
 import {ModelComponent} from "./model/model.component";
-import {NgforComponent} from "./ngfor/ngfor.component";
 import {NgifComponent} from "./ngif/ngif.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { FormsComponent } from './forms/forms.component';
@@ -23,6 +22,7 @@ import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
 import {ObservableExampleComponent} from "./observable-example/observable-example.component";
+import {NgforComponent} from "./ngfor/ngfor.component";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -30,14 +30,14 @@ import {ObservableExampleComponent} from "./observable-example/observable-exampl
     AppComponent, HelloComponent, BindingsComponent,
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
-    NgforComponent, NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent
+    NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule, routing
+    RouterModule //, routing
     //,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService],

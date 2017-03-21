@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+import {PersonService} from "../../services-solution/person.service-with-observable.solution";
+
+@Component({
+  selector: 'app-ngfor-obs',
+  template: ` 
+      <ul>
+        <li *ngFor="let person of persons">
+          {{ getFullName(person) }}
+        </li>
+      </ul>`
+})
+export class NgforComponent {
+
+  public persons = [];
+
+  constructor(private service : PersonService){
+    service.getList().subscribe(data => this.persons = data);
+  }
+
+  getFullName(person) {
+    return person.name + " -  " + person.company;
+  }
+
+}

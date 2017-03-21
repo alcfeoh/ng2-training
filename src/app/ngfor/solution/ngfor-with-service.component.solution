@@ -19,7 +19,7 @@ export class NgforComponent {
   }
 
   getFullName(person) {
-    return person.firstName + " " + person.lastName;
+    return person.name + " - " + person.company;
   }
 
 }

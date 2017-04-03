@@ -24,10 +24,5 @@ export class HttpComponent {
   loadData(){
     // Use this method to load data from the following URL:
     // http://interstate21.com/demos/angular/index.php
-    this.http.get("http://interstate21.com/demos/angular/index.php")
-      .map(res => res.json())
-      .subscribe(res => {
-        this.persons = res;
-      });
   }
 }

@@ -11,7 +11,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class HelloWorld2 {
 
   @Input()
-  message : String;
+  message;
 
   @Output()
   onClick : EventEmitter<string> = new EventEmitter();

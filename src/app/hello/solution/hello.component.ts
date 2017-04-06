@@ -14,7 +14,7 @@ export class HelloComponent {
   firstName: string = "John";
 
   constructor() {
-    this.name = 'Angular 2 ';
+    this.name = 'Angular';
   }
 
 }

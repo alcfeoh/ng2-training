@@ -1,0 +1,28 @@
+import { Component } from '@angular/core';
+import {Observable} from "rxjs";
+import {Http} from "@angular/http";
+
+@Component({
+  selector: 'app-forms',
+  templateUrl: 'forms.component.html',
+  styleUrls: ['forms.component.css']
+})
+export class FormsComponent {
+
+  states: Observable<State>;
+
+  constructor(http: Http) {
+    this.states = http.get("./data/US_states.json").map(res => res.json());
+  }
+
+  logForm(value) {
+    console.log(value);
+  }
+
+
+}
+
+interface State {
+  name: string;
+  abbreviation: string;
+}

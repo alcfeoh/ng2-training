@@ -18,6 +18,6 @@ import { Component } from '@angular/core';
 })
 export class NgswitchComponent {
 
-  page : String = null;
+  page = null;
 
 }

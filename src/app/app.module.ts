@@ -23,6 +23,8 @@ import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
 import {ObservableExampleComponent} from "./observable-example/observable-example.component";
 import {NgforComponent} from "./ngfor/ngfor.component";
+import { ListPostsComponent } from './observable-example/list-posts/list-posts.component';
+import {PostsService} from "./observable-example/list-posts/posts.service";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -31,7 +33,7 @@ import {NgforComponent} from "./ngfor/ngfor.component";
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
     NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import {NgforComponent} from "./ngfor/ngfor.component";
     RouterModule //, routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService],
+  providers: [AuthGuard, LoginService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

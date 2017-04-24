@@ -1,4 +1,4 @@
-<form #form="ngForm" (ngSubmit)="logForm(form.value)">
+<form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate >
   <label>Firstname:</label>
   <input type="text" name="firstname" ngModel required>
   <br/>

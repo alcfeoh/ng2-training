@@ -1,14 +1,14 @@
-import { MigrationRpojectPage } from './app.po';
+import { NgTrainingPage } from './app.po';
 
-describe('migration-rpoject App', function() {
-  let page: MigrationRpojectPage;
+describe('ng-training App', () => {
+  let page: NgTrainingPage;
 
   beforeEach(() => {
-    page = new MigrationRpojectPage();
+    page = new NgTrainingPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Hello Angular');
   });
 });

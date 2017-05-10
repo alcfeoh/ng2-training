@@ -25,6 +25,7 @@ import {ObservableExampleComponent} from "./observable-example/observable-exampl
 import {NgforComponent} from "./ngfor/ngfor.component";
 import { ListPostsComponent } from './observable-example/list-posts/list-posts.component';
 import {PostsService} from "./observable-example/list-posts/posts.service";
+import { NgClassComponent } from './ng-class/ng-class.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -33,7 +34,7 @@ import {PostsService} from "./observable-example/list-posts/posts.service";
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
     NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent, NgClassComponent
   ],
   imports: [
     BrowserModule,

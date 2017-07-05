@@ -21,7 +21,7 @@ describe('JasmineTestComponent', () => {
 
   });
 
-  it('should dispay the right text', () =>{
+  it('should display the right text', () =>{
     // query for <p> by CSS element selector
     de = fixture.debugElement.query(By.css('p'));
     el = de.nativeElement;

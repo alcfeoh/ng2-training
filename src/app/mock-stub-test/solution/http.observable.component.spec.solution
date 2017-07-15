@@ -1,0 +1,59 @@
+/* tslint:disable:no-unused-variable */
+
+import {TestBed, ComponentFixture} from '@angular/core/testing';
+import {DebugElement} from '@angular/core';
+import {By} from '@angular/platform-browser';
+import {HttpObservableComponent} from "../http.observable.component";
+import {Http} from "@angular/http";
+import {Observable} from "rxjs";
+
+let comp:    HttpObservableComponent;
+let fixture: ComponentFixture<HttpObservableComponent>;
+let de:      DebugElement;
+let el:      HTMLElement;
+
+let httpServiceStub = {
+  get(url : string){
+    return Observable.of( { json : () => { return [
+        { "_id": "58c8684e9e416245ffb60088",
+          "name": "Edith Eaton",
+          "company": "DADABASE",
+          "email": "editheaton@dadabase.com",
+          "phone": "+1 (854) 486-2088",
+          "address": "280 Florence Avenue, Salix, Alaska, 3036",
+          "birthDate": "1982/04/06" },
+        { "_id": "58c8684e854286bcc54c362f",
+          "name": "Tami Curry",
+          "company": "VISUALIX",
+          "email": "tamicurry@visualix.com",
+          "phone": "+1 (926) 441-3832",
+          "address": "125 Wilson Street, Eden, Idaho, 5316",
+          "birthDate": "1982/04/06" }
+      ]}
+    });
+  }
+};
+
+describe('HttpObservableComponentTest', () => {
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [ HttpObservableComponent ], // declare the test component,
+      providers: [{provide: Http, useValue: httpServiceStub}]
+    });
+    fixture = TestBed.createComponent(HttpObservableComponent);
+    comp = fixture.componentInstance; // JasmineTestComponent test instance
+
+  });
+
+  it('should display the right text', () =>{
+    // Have to call detectChanges() to force the component template to refresh
+    fixture.detectChanges();
+    // Getting the list
+    de = fixture.debugElement.query(By.css('ul'));
+    el = de.nativeElement;
+    // Checkling that our two persons show up properly
+    expect(el.children[0].textContent).toBe('Edith Eaton');
+    expect(el.children[1].textContent).toBe('Tami Curry');
+  })
+});

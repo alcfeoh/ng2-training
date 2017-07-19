@@ -9,7 +9,7 @@ export class PostsService {
   constructor(private http: Http) { }
 
   getPosts() : Observable<Post> {
-    return this.http.get("./data/posts.json")
+    return this.http.get("http://localhost:8080/posts.json")
       .map(result => result.json())
       .switchMap(postsData =>
         Observable.interval(2000)
@@ -19,7 +19,7 @@ export class PostsService {
   }
 
   getPostsAsPromise() : PromiseLike<Post[]> {
-    return this.http.get("./data/posts.json")
+    return this.http.get("http://localhost:8080/posts.json")
       .map(result => result.json())
       .toPromise();
   }

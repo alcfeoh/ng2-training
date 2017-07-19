@@ -12,7 +12,7 @@ export class FormsComponent {
   states: Observable<State>;
 
   constructor(http: Http) {
-    this.states = http.get("./data/US_states.json").map(res => res.json());
+    this.states = http.get("http://localhost:8080/US_states.json").map(res => res.json());
   }
 
   logForm(value) {

@@ -4,7 +4,7 @@ import '../../rxjs-operators';
 
 @Component({
   selector: 'app-http-prom',
-  template: ` 
+  template: `
       <input type="button" class="btn btn-primary" (click)="loadData()" value="Load Data"/>
       <ul>
         <li *ngFor="let person of persons">{{ getFullName(person) }}</li>
@@ -22,7 +22,7 @@ export class HttpPromiseComponent {
   }
 
   loadData(){
-    this.http.get("http://interstate21.com/demos/angular/index.php")
+    this.http.get("http://localhost:8080/persons.json")
       .toPromise()
       .then(res => {
         this.persons = res.json();

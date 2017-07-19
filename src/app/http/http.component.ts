@@ -23,6 +23,11 @@ export class HttpComponent {
 
   loadData(){
     // Use this method to load data from the following URL:
-    // http://interstate21.com/demos/angular/index.php
+    // http://localhost:8080/persons.json
+    // In order to serve data on that URL:
+    // npm install -g http-server
+    // Then go to the 'data' folder of this ng2-training project and run:
+    // http-server --cors
+
   }
 }

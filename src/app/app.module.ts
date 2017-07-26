@@ -26,6 +26,7 @@ import {NgforComponent} from "./ngfor/ngfor.component";
 import { ListPostsComponent } from './observable-example/list-posts/list-posts.component';
 import {PostsService} from "./observable-example/list-posts/posts.service";
 import { NgClassComponent } from './ng-class/ng-class.component';
+import {HttpClientModule} from "@angular/common/http";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     RouterModule //, routing
     //,ReactiveFormsModule
   ],

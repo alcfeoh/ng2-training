@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Post} from "./post";
 
 @Injectable()
 export class PostsService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
   getPosts() : Observable<Post> {
-    return this.http.get("http://localhost:8080/posts.json")
-      .map(result => result.json())
+    return this.http.get<Post[]>("http://localhost:8080/posts.json")
       .switchMap(postsData =>
         Observable.interval(2000)
           .take(postsData.length)
@@ -19,8 +18,6 @@ export class PostsService {
   }
 
   getPostsAsPromise() : PromiseLike<Post[]> {
-    return this.http.get("http://localhost:8080/posts.json")
-      .map(result => result.json())
-      .toPromise();
+    return this.http.get<Post[]>("http://localhost:8080/posts.json").toPromise();
   }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
+import {HttpClient} from "@angular/common/http";
 import '../../rxjs-operators';
 
 @Component({
@@ -15,7 +15,7 @@ export class HttpPromiseComponent {
 
   persons = [];
 
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   getFullName(person) {
     return person.name;
@@ -25,7 +25,7 @@ export class HttpPromiseComponent {
     this.http.get("http://localhost:8080/persons.json")
       .toPromise()
       .then(res => {
-        this.persons = res.json();
+        this.persons = res;
       });
 
   }

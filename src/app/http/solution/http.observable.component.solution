@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import '../../rxjs-operators';
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-http',
@@ -11,9 +12,10 @@ import '../../rxjs-operators';
       </ul>`
 
 })
-export class HttpObservableComponent {
+export class HttpObservableComponent implements OnDestroy {
 
-  persons = [];
+  persons;
+  subscription : Subscription;
 
   constructor(private http: HttpClient) {}
 
@@ -22,9 +24,14 @@ export class HttpObservableComponent {
   }
 
   loadData(){
-    this.http.get("http://localhost:8080/persons.json")
+    this.subscription = this.http.get("http://localhost:8080/persons.json")
       .subscribe(res => {
         this.persons = res;
       });
+  }
+
+  ngOnDestroy(){
+    if (this.subscription)
+      this.subscription.unsubscribe();
   }
 }

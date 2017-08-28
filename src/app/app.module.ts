@@ -27,6 +27,8 @@ import { ListPostsComponent } from './observable-example/list-posts/list-posts.c
 import {PostsService} from "./observable-example/list-posts/posts.service";
 import { NgClassComponent } from './ng-class/ng-class.component';
 import {HttpClientModule} from "@angular/common/http";
+import { PopupWindowComponent } from './popup-window/popup-window.component';
+import { LoaderComponent } from './popup-window/loader/loader.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -35,7 +37,7 @@ import {HttpClientModule} from "@angular/common/http";
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
     NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent, NgClassComponent
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent, NgClassComponent, PopupWindowComponent, LoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<p>
+  <button (click)="promptUser()">Show pop-up</button>
+
+  <app-popup-window [isOpen]="showPopup" title="Hello World"
+                    (onClose)="popupClosed($event)">
+    {{name}} is viewing this pop-up
+  </app-popup-window>
+</p>

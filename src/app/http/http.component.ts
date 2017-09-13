@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import '../rxjs-operators';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-http',
@@ -15,7 +15,7 @@ export class HttpComponent {
 
   persons = [];
 
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   getFullName(person) {
     return person.name;

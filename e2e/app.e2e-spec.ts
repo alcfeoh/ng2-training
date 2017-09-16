@@ -7,7 +7,7 @@ describe('ng-training App', () => {
     page = new NgTrainingPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying Hello Angular', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Hello Angular');
   });

@@ -10,8 +10,6 @@ export class LoaderViewChildComponent {
   @ViewChild(PopupWindowComponent)
   popup : PopupWindowComponent;
 
-  constructor() { }
-
   showPopup() {
     this.popup.isOpen = true;
   }
@@ -19,5 +17,4 @@ export class LoaderViewChildComponent {
   popupClosed(event) {
     console.log(event);
   }
-
 }

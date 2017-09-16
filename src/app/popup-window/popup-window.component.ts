@@ -11,7 +11,7 @@ export class PopupWindowComponent implements OnInit {
   isOpen = false;
 
   @Input()
-  title;
+  title = "Title";
 
   @Output()
   onClose = new EventEmitter<string>();

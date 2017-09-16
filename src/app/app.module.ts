@@ -30,6 +30,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
+import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.component";
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HeaderComponent } from './header/header.component';
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, HttpComponent, ModelComponent,
     NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent, NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent
+    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
+    NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, LoaderViewChildComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
-<p [ngClass]="{ 'bluebg' : isBlue, 'whitetext': isWhite}">
+<p [ngClass]="{ 'bluebg' : isBlue, 'greenbg' : isGreen, 'whitetext': isWhite}">
   ng-class
 </p>
-<button (click)="isBlue = true">Set blue background</button>
+<button (click)="isBlue = true; isGreen = false">Set blue background</button>
+<button (click)="isGreen = true; isBlue = false">Set green background</button>
+<br>
 <button (click)="isWhite = false">Set text to black</button>
 <button (click)="isWhite = true">Set text to white</button>

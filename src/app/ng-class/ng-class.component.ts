@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgClassComponent implements OnInit {
 
+  isBlue;
+  isGreen;
+  isWhite;
+
   constructor() { }
 
   ngOnInit() {

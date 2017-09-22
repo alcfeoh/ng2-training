@@ -4,7 +4,6 @@ import {LoginService} from "./login/login.service";
 @Component({
   selector: 'app-router',
   template: `
-<p *ngIf="! loginService.isUserLoggedIn()">Please log in first</p>
 
       <h1>Component Router</h1>
       <ul>
@@ -21,6 +20,6 @@ import {LoginService} from "./login/login.service";
 })
 export class RouterComponent {
 
-  constructor(private loginService : LoginService) {}
+  constructor(public loginService : LoginService) {}
 
 }

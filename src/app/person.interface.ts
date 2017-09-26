@@ -8,5 +8,5 @@ export interface Person {
   email: string;
   phone: string;
   address: string;
-  birthDate: string;
+  birthDate: Date | string;
 }

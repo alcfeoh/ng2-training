@@ -7,11 +7,10 @@ import {LoginService} from "./login/login.service";
 
       <h1>Component Router</h1>
       <ul>
-        <li><a routerLink="/" routerLinkActive="active">Hello World example</a></li>
-        <li><a routerLink="/if" routerLinkActive="active">ngIf example</a></li>
-        <li><a routerLink="/http" routerLinkActive="active">HTTP example</a></li>
+        <li><a routerLink="/" >Hello World example</a></li>
+        <li><a routerLink="/if" >ngIf example</a></li>
+        <li><a routerLink="/http">HTTP example</a></li>
       </ul>
-      
       
       <hr>
       <router-outlet></router-outlet>
@@ -19,7 +18,12 @@ import {LoginService} from "./login/login.service";
     `,
 })
 export class RouterComponent {
+  id;
 
-  constructor(public loginService : LoginService) {}
+  constructor(public activatedRoute : ActivatedRoute) {
+      activatedRoute.paramMap
+        .subscribe((params: ParamMap) =>
+          this.id = params.get('id'))
+  }
 
 }

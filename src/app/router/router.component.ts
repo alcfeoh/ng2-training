@@ -18,12 +18,7 @@ import {LoginService} from "./login/login.service";
     `,
 })
 export class RouterComponent {
-  id;
 
-  constructor(public activatedRoute : ActivatedRoute) {
-      activatedRoute.paramMap
-        .subscribe((params: ParamMap) =>
-          this.id = params.get('id'))
-  }
+  constructor() {}
 
 }

@@ -9,7 +9,7 @@ import {LoginService} from "./login/login.service";
       <ul>
         <li><a routerLink="/" >Hello World example</a></li>
         <li><a routerLink="/if" >ngIf example</a></li>
-        <li><a routerLink="/http">HTTP example</a></li>
+        <li><a routerLink="/posts">Social media posts</a></li>
       </ul>
       
       <hr>

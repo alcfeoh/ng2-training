@@ -9,7 +9,6 @@ import { HelloComponent } from './hello/hello.component';
 import { BindingsComponent } from './bindings/bindings.component';
 import * as comm from './communication';
 import {HidingComponent} from "./hiding/hiding.component";
-import {HttpComponent} from "./http/http.component";
 import {ModelComponent} from "./model/model.component";
 import {NgifComponent} from "./ngif/ngif.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
@@ -31,7 +30,6 @@ import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
 import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.component";
-import {HttpObservableComponent} from "./mock-stub-test/http.observable.component";
 import {EvenUppercasePipe} from "./pipe-solution/even-uppercase.pipe";
 import {SpinnerComponent} from "./spinner/spinner.component";
 import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
@@ -41,7 +39,7 @@ import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/
   declarations: [
     AppComponent, HelloComponent, BindingsComponent,
     comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
-    HidingComponent, HttpComponent, ModelComponent, EvenUppercasePipe, HttpObservableComponent,
+    HidingComponent, ModelComponent, EvenUppercasePipe,
     NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
@@ -52,7 +50,7 @@ import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/
     FormsModule,
     HttpModule,
     HttpClientModule,
-    RouterModule //, routing
+    RouterModule , routing
     //,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, PostsService],

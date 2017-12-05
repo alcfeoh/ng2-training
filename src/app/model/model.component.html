@@ -1,4 +1,6 @@
 <div>
+  <b>Enter your name:</b>
+  <br>&nbsp;<br>
   <div>
     <label>Name : </label>
     <input type="text" [(ngModel)]="person.name" />
@@ -7,5 +9,11 @@
     <label>First name : </label>
     <input type="text" [(ngModel)]="person.firstName" />
   </div>
-  <div>The person full name is: {{person.firstName  + " " + person.name}}</div>
+  <br>
+  <div>
+    <input type="checkbox" />
+    <span>I,  {{person.firstName  + " " + person.name}}, accept the terms and conditions to use this app.</span>
+  </div>
+  <br>
+  <button>Create account</button>
 </div>

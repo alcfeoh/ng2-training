@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Observable} from "rxjs";
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-forms',
@@ -9,17 +9,15 @@ import {Http} from "@angular/http";
 })
 export class FormsComponent {
 
-  states: Observable<State>;
+  states: Observable<State[]>;
 
-  constructor(http: Http) {
-    this.states = http.get("http://localhost:8080/US_states.json").map(res => res.json());
+  constructor(http: HttpClient) {
+    this.states = http.get<State[]>("http://localhost:8080/US_states.json"));
   }
 
   logForm(value) {
     console.log(value);
   }
-
-
 }
 
 interface State {

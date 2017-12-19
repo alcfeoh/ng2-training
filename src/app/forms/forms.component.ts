@@ -13,3 +13,8 @@ export class FormsComponent {
     console.log(value);
   }
 }
+
+interface State {
+  name: string;
+  abbreviation: string;
+}

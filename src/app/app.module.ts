@@ -7,10 +7,8 @@ import {RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { BindingsComponent } from './bindings/bindings.component';
-import * as comm from './communication';
 import {HidingComponent} from "./hiding/hiding.component";
 import {ModelComponent} from "./model/model.component";
-import {NgifComponent} from "./ngif/ngif.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { FormsComponent } from './forms/forms.component';
 import { routing } from './app.routing';
@@ -38,9 +36,8 @@ import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, BindingsComponent,
-    comm.CommunicationComponent, comm.CommunicationComponent2, comm.HelloWorld, comm.HelloWorld2,
     HidingComponent, ModelComponent, EvenUppercasePipe,
-    NgifComponent, NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
+    NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent,

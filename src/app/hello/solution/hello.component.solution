@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'hello',
-  templateUrl: './hello.template.html'
+  template: `
+      <div>
+        <h2>Hello {{name}}</h2>
+      </div>
+    `
 })
 export class HelloComponent {
 

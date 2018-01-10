@@ -6,14 +6,14 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <li class="nav-item">
         <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="cart" >My cart <span class="sr-only"></span></a>
+      <li class="nav-item">
+        <a class="nav-link"  >My cart <span class="sr-only"></span></a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="checkout" >Checkout <span class="sr-only"></span></a>
+      <li class="nav-item">
+        <a class="nav-link" >Checkout <span class="sr-only"></span></a>
       </li>
 
     </ul>
@@ -25,7 +25,12 @@
 </nav>
 
 <main role="main">
-  <router-outlet></router-outlet>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Title</h1>
+      <p>Description</p>
+    </div>
+  </div>
 </main>
 
 <footer class="container">

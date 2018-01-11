@@ -1,0 +1,16 @@
+LAB #1:
+No solution - just run the commands in a terminal
+
+LAB #2:
+Solution located in ths project:
+  src/app/hello/solution
+
+The name of the selector also has to be changed in src/app/app.component.ts
+
+LAB #3:
+Both components can be found here:
+  https://github.com/alcfeoh/ng-online-store/tree/master/src/app/jumbotron
+  https://github.com/alcfeoh/ng-online-store/tree/master/src/app/navigation
+
+And src/app/app.component.ts  must use the following decorator config instead of 'template':
+  templateUrl: './app.component.html'

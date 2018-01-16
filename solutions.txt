@@ -2,7 +2,7 @@ LAB #1:
 No solution - just run the commands in a terminal
 
 LAB #2:
-Solution located in ths project:
+Solution located in the directory:
   src/app/hello/solution
 
 The name of the selector also has to be changed in src/app/app.component.ts
@@ -14,3 +14,17 @@ Both components can be found here:
 
 And src/app/app.component.ts  must use the following decorator config instead of 'template':
   templateUrl: './app.component.html'
+
+LAB #4:
+Add <app-license-plate [plate]="licensePlate" buttonText="Add to cart" class="col-md-4"></app-license-plate>
+to src/app/app.component.html where the comment <!-- License plates go here --> is located
+
+Edit src/app/license-plate.component.html to add {{plate.price}} instead of xx
+as well as (click)="alert('Plate added to cart')"  to the button.
+
+Edit src/app/license-plate.component.ts to add the following method:
+  alert(message) {
+    alert(message);
+  }
+
+LAB #5:

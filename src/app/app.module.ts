@@ -31,11 +31,12 @@ import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.c
 import {EvenUppercasePipe} from "./pipe-solution/even-uppercase.pipe";
 import {SpinnerComponent} from "./spinner/spinner.component";
 import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
+import {LicensePlateComponent} from './license-plate/license-plate.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent, HelloComponent, BindingsComponent,
+    AppComponent, HelloComponent, BindingsComponent, LicensePlateComponent,
     HidingComponent, ModelComponent, EvenUppercasePipe,
     NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,

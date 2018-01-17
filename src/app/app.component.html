@@ -1,36 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">License Plate Store</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"  >My cart <span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" >Checkout <span class="sr-only"></span></a>
-      </li>
-
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+<app-navigation></app-navigation>
 
 <main role="main">
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Title</h1>
-      <p>Description</p>
-    </div>
-  </div>
+  <app-jumbotron title="Welcome to our store" description="Browse our collection of license plates below"></app-jumbotron>
 
   <div class="container">
     <div class="row" >

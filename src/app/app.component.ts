@@ -91,7 +91,4 @@ export class AppComponent {
       "description": "Velit minim aute minim irure magna cupidatat est reprehenderit. Aliqua Lorem nostrud aliquip non voluptate qui fugiat. Amet pariatur proident cupidatat minim in laborum sit esse. Tempor eu eu elit cupidatat eu elit in aliqua eu culpa ut consequat culpa minim. Ut labore sit anim ea magna occaecat sunt laboris quis reprehenderit. Amet pariatur excepteur et ex et ex ad laboris aute nulla dolor ut nostrud.\r\n"
     }
   ];
-
-  // This is for lab #3
-  licensePlate: LicensePlate = this.licensePlates[2];
 }

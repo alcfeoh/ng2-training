@@ -15,4 +15,8 @@ export class LicensePlateComponent {
   buttonText: string;
 
   constructor() { }
+
+  alert(message: string): void {
+    alert(message);
+  }
 }

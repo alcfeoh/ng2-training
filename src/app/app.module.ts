@@ -32,6 +32,7 @@ import {EvenUppercasePipe} from "./pipe-solution/even-uppercase.pipe";
 import {SpinnerComponent} from "./spinner/spinner.component";
 import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
+import { CarouselComponent } from './carousel/carousel.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -42,6 +43,7 @@ import {LicensePlateComponent} from './license-plate/license-plate.component';
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

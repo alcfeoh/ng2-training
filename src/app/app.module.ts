@@ -34,6 +34,7 @@ import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { CarouselComponent } from './carousel/carousel.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -46,6 +47,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     LoaderViewChildComponent,
     JumbotronComponent,
     NavigationComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

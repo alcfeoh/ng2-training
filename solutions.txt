@@ -47,3 +47,9 @@ in the <h2> title tag.
 
 
 ----------------------------------------------------------------------------------
+LAB #7:
+
+Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab7
+File diff at https://github.com/alcfeoh/ng2-training/commit/367df25d591911ec871182b492c20cd9d16c115d
+
+----------------------------------------------------------------------------------

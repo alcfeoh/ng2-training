@@ -35,6 +35,7 @@ import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { HighlightDirective } from './highlight.directive';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -47,7 +48,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoaderViewChildComponent,
     JumbotronComponent,
     NavigationComponent,
-    CarouselComponent
+    CarouselComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

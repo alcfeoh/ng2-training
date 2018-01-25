@@ -5,9 +5,8 @@
 
   <div class="container">
     <div class="row" >
-      <app-license-plate *ngFor="let plate of licensePlates;let o = odd"
-                         [style.background-color]="o ? '' : '#F5F5F5'"
-                         [plate]="plate" buttonText="Add to cart" class="col-md-4">
+      <app-license-plate *ngFor="let plate of licensePlates" appHighlight
+                     [plate]="plate" buttonText="Add to cart" class="col-md-4">
 
       </app-license-plate>
     </div>

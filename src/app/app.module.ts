@@ -36,6 +36,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HighlightDirective } from './highlight.directive';
+import { CurrencyRendererPipe } from './currency-renderer.pipe';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -49,7 +50,8 @@ import { HighlightDirective } from './highlight.directive';
     JumbotronComponent,
     NavigationComponent,
     CarouselComponent,
-    HighlightDirective
+    HighlightDirective,
+    CurrencyRendererPipe
   ],
   imports: [
     BrowserModule,

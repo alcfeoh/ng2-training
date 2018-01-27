@@ -37,6 +37,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HighlightDirective } from './highlight.directive';
 import { CurrencyRendererPipe } from './currency-renderer.pipe';
+import {LicensePlateService} from './license-plate.service';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -61,7 +62,7 @@ import { CurrencyRendererPipe } from './currency-renderer.pipe';
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, PostsService],
+  providers: [AuthGuard, LoginService, PostsService, LicensePlateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

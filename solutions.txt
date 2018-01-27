@@ -80,6 +80,6 @@ File diff at https://github.com/alcfeoh/ng2-training/commit/11a85e29ceeaa169df27
 LAB#12
 
 Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab12
-File diff at
+File diff at https://github.com/alcfeoh/ng2-training/commit/f16a904e8a9f666d2a5bf9343b34c319ed73feda
 
 ----------------------------------------------------------------------------------

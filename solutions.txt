@@ -77,3 +77,9 @@ Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab11
 File diff at https://github.com/alcfeoh/ng2-training/commit/11a85e29ceeaa169df27c9010fa1427819d3a4e3
 
 ----------------------------------------------------------------------------------
+LAB#12
+
+Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab12
+File diff at
+
+----------------------------------------------------------------------------------

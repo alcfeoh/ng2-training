@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import {LicensePlate} from './license-plate';
+import {Observable} from 'rxjs';
 
 @Injectable()
 export class LicensePlateService {
 
   constructor() { }
 
-  getList(): LicensePlate[] {
-    return [
+  getList(): Observable<LicensePlate[]> {
+    return Observable.of([
   {
     "_id": "5a0c8ab22d8dc1f7fa170c9d",
     "onSale": false,
@@ -88,6 +89,6 @@ export class LicensePlateService {
     "state": "PA",
     "description": "Velit minim aute minim irure magna cupidatat est reprehenderit. Aliqua Lorem nostrud aliquip non voluptate qui fugiat. Amet pariatur proident cupidatat minim in laborum sit esse. Tempor eu eu elit cupidatat eu elit in aliqua eu culpa ut consequat culpa minim. Ut labore sit anim ea magna occaecat sunt laboris quis reprehenderit. Amet pariatur excepteur et ex et ex ad laboris aute nulla dolor ut nostrud.\r\n"
   }
-];
+]);
   }
 }

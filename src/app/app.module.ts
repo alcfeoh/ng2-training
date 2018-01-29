@@ -38,6 +38,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { HighlightDirective } from './highlight.directive';
 import { CurrencyRendererPipe } from './currency-renderer.pipe';
 import {LicensePlateService} from './license-plate.service';
+import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
+import { CurrencyService } from './currency-switcher/currency.service';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -52,7 +54,8 @@ import {LicensePlateService} from './license-plate.service';
     NavigationComponent,
     CarouselComponent,
     HighlightDirective,
-    CurrencyRendererPipe
+    CurrencyRendererPipe,
+    CurrencySwitcherComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,7 @@ import {LicensePlateService} from './license-plate.service';
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, PostsService, LicensePlateService],
+  providers: [AuthGuard, LoginService, PostsService, LicensePlateService, CurrencyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

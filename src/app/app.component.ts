@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {LicensePlate} from './license-plate';
 import {LicensePlateService} from './license-plate.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,9 @@ import {LicensePlateService} from './license-plate.service';
 })
 export class AppComponent {
 
-  licensePlates: LicensePlate[];
+  licensePlates: Observable<LicensePlate[]>;
 
   constructor(private service: LicensePlateService) {
-      this.service.getList().subscribe( (data) => {
-        this.licensePlates = data;
-      });
+      this.licensePlates = this.service.getList();
   }
 }

@@ -5,7 +5,7 @@
 
   <div class="container">
     <div class="row" >
-      <app-license-plate *ngFor="let plate of licensePlates" appHighlight
+      <app-license-plate *ngFor="let plate of licensePlates | async" appHighlight
                      [plate]="plate" buttonText="Add to cart" class="col-md-4">
 
       </app-license-plate>

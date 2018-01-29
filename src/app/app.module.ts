@@ -33,6 +33,7 @@ import {SpinnerComponent} from "./spinner/spinner.component";
 import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -44,6 +45,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent,
     CarouselComponent,
+    CurrencySwitcherComponent
   ],
   imports: [
     BrowserModule,

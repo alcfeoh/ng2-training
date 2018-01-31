@@ -34,6 +34,7 @@ import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
+import { CartService } from './cart.service';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -55,7 +56,7 @@ import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, PostsService],
+  providers: [AuthGuard, LoginService, PostsService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

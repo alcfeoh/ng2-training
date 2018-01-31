@@ -11,6 +11,7 @@ import {CartService} from './cart.service';
 export class AppComponent {
 
   licensePlates: Observable<LicensePlate[]>;
+  showPopup = false;
 
   constructor(private service: LicensePlateService, private cartService: CartService) {
       this.licensePlates = this.service.getList();
@@ -18,6 +19,6 @@ export class AppComponent {
 
   addToCart(plate: LicensePlate) {
     this.cartService.addToCart(plate)
-      .subscribe(done => alert(`Plate '${plate.title}' added to cart`));
+      .subscribe(done => this.showPopup = true);
   }
 }

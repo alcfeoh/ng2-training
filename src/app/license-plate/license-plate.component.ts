@@ -14,9 +14,7 @@ export class LicensePlateComponent {
   @Input()
   buttonText: string;
 
-  constructor() { }
+  @Output()
+  onAddToCart = new EventEmitter<LicensePlate>();
 
-  alert(message: string): void {
-    alert(message);
-  }
 }

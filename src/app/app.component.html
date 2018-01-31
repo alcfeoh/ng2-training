@@ -6,8 +6,7 @@
   <div class="container">
     <div class="row" >
       <app-license-plate *ngFor="let plate of licensePlates | async" appHighlight
-                     [plate]="plate" buttonText="Add to cart" class="col-md-4">
-
+                     [plate]="plate" (onAddToCart)="addToCart($event)" buttonText="Add to cart" class="col-md-4">
       </app-license-plate>
     </div>
   </div>
@@ -16,3 +15,9 @@
 <footer class="container">
   <p>&copy; License Plate Store 2017</p>
 </footer>
+
+<app-popup-window [isOpen]="showPopup" title="Item added to cart" (onClose)="showPopup = false"  >
+  Thanks for shopping with us!
+</app-popup-window>
+
+

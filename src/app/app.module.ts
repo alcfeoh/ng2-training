@@ -40,6 +40,7 @@ import { CurrencyRendererPipe } from './currency-renderer.pipe';
 import {LicensePlateService} from './license-plate.service';
 import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
 import { CurrencyService } from './currency-switcher/currency.service';
+import { CartService } from './cart.service';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -65,7 +66,7 @@ import { CurrencyService } from './currency-switcher/currency.service';
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, PostsService, LicensePlateService, CurrencyService],
+  providers: [AuthGuard, LoginService, PostsService, LicensePlateService, CurrencyService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

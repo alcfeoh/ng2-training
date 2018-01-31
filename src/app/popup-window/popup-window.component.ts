@@ -24,5 +24,4 @@ export class PopupWindowComponent implements OnInit {
     this.isOpen = false;
     this.onClose.emit('Pop-up window closed');
   }
-
 }

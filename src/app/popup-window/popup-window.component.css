@@ -1,4 +1,4 @@
-.modal {
+.modalW {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -12,7 +12,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modalW-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -52,18 +52,18 @@
   cursor: pointer;
 }
 
-.modal-header {
+.modalW-header {
   padding: 2px 16px;
   background-color: steelblue;
   color: white;
 }
 
-.modal-body {
+.modalW-body {
   padding: 10px 10px;
   min-height: 50px;
 }
 
-.modal-footer {
+.modalW-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;

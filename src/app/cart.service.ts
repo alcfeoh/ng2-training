@@ -13,13 +13,10 @@ export class CartService {
   }
 
   addToCart(plate: LicensePlate): Observable<string> {
-    // TODO
-    return Observable.of("To be implemented");
+    return this.http.put<string>('http://localhost:8000/cart/' + plate._id, null);
   }
 
   removeFromCart(plate: LicensePlate): Observable<string> {
-    // TODO
-    return Observable.of("To be implemented");
+    return this.http.delete<string>('http://localhost:8000/cart/' + plate._id);
   }
-
 }

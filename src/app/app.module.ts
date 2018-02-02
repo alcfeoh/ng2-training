@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
@@ -35,6 +34,9 @@ import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
 import { CartService } from './cart.service';
+import {CartViewComponent} from './cart-view/cart-view.component';
+import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
+import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -46,12 +48,12 @@ import { CartService } from './cart.service';
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent,
     CarouselComponent,
-    CurrencySwitcherComponent
+    CurrencySwitcherComponent,
+    //CartViewComponent, CheckoutFormComponent, CheckoutViewComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     HttpClientModule,
     RouterModule , routing
     //,ReactiveFormsModule

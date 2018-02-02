@@ -43,6 +43,7 @@ import { CartService } from './cart.service';
 import {CartViewComponent} from './cart-view/cart-view.component';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
+import { StoreViewComponent } from './store-view/store-view.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -59,13 +60,13 @@ import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
     HighlightDirective,
     CurrencyRendererPipe,
     CurrencySwitcherComponent,
-    CartViewComponent, CheckoutFormComponent, CheckoutViewComponent
+    CartViewComponent, CheckoutFormComponent, CheckoutViewComponent, StoreViewComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule , routing
+    RouterModule, routing
     //,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, PostsService, LicensePlateService, CurrencyService, CartService],

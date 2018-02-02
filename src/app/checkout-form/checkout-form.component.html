@@ -40,9 +40,8 @@
   <br>
   <div class="row">
     <div class="col-lg-6">
-      <div class="alert alert-danger" role="alert" [hidden]="cc.valid || cc.pristine">Please enter a valid credit card number</div>
       <div class="input-group">
-        <input type="password" class="form-control" placeholder="Credit card number" name="cc" ngModel required  pattern="[0-9]{16}" #cc="ngModel">
+        <input type="password" class="form-control" placeholder="Credit card number" name="cc" ngModel required>
         <span class="input-group-addon" ><img src="assets/card-types/mastercard.png"/></span>
       </div>
     </div>

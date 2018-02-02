@@ -7,7 +7,7 @@
   <div class="row" >
 
     <app-license-plate *ngFor="let plate of cartContents" [plate]="plate"
-                        buttonText="Remove from cart &times;" (onButtonClick)="removeFromCart(plate)"
+                        buttonText="Remove from cart &times;" (onAddToCart)="removeFromCart(plate)"
                        class="col-md-4" style="margin-top: 40px">
 
     </app-license-plate>

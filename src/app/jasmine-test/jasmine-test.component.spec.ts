@@ -1,5 +1,3 @@
-/* tslint:disable:no-unused-variable */
-
 import {TestBed, ComponentFixture} from '@angular/core/testing';
 import { JasmineTestComponent } from './jasmine-test.component';
 import {DebugElement} from '@angular/core';
@@ -10,7 +8,7 @@ let fixture: ComponentFixture<JasmineTestComponent>;
 let de:      DebugElement;
 let el:      HTMLElement;
 
-describe('JasmineTestComponent', () => {
+fdescribe('JasmineTestComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
@@ -44,7 +44,7 @@ import {CartViewComponent} from './cart-view/cart-view.component';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import { StoreViewComponent } from './store-view/store-view.component';
-//import { ReactiveFormsModule } from '@angular/forms';
+import {CreditCardImageDirective} from './credit-card-image.directive';
 
 @NgModule({
   declarations: [
@@ -60,14 +60,14 @@ import { StoreViewComponent } from './store-view/store-view.component';
     HighlightDirective,
     CurrencyRendererPipe,
     CurrencySwitcherComponent,
-    CartViewComponent, CheckoutFormComponent, CheckoutViewComponent, StoreViewComponent
+    CartViewComponent, CheckoutFormComponent, CheckoutViewComponent, StoreViewComponent, CreditCardImageDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule, routing
-    //,ReactiveFormsModule
+    ,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, PostsService, LicensePlateService, CurrencyService, CartService],
   bootstrap: [AppComponent]

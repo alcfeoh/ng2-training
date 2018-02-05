@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-checkout-form',
@@ -7,9 +10,20 @@ import { Component } from '@angular/core';
 })
 export class CheckoutFormComponent {
 
-  constructor() { }
+  states: Observable<any>;
+  showPopup=  false;
+
+  constructor(public http: HttpClient, private router: Router) {
+    this.states = http.get('http://localhost:8000/states');
+  }
 
   logForm(value) {
     console.log(value);
+    this.http.put('http://localhost:8000/checkout', value).subscribe(success => this.showPopup = true);
+  }
+
+  goToHome() {
+    this.showPopup = false;
+    this.router.navigateByUrl('/');
   }
 }

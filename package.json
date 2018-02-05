@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "node node_modules/lp-store-server/index.js"
+    "server": "node node_modules/lp-store-server/solutions/index.js"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "@angular/router": "^5.2.3",
     "bootstrap": "4.0.0-beta.2",
     "core-js": "^2.5.3",
-    "lp-store-server": "^1.0.3",
+    "lp-store-server": "^2.0.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.20"
   },
@@ -31,7 +31,7 @@
     "@angular/cli": "^1.6.7",
     "@angular/compiler-cli": "^5.2.3",
     "@types/jasmine": "2.5.38",
-    "@types/node": "~6.0.60",
+    "@types/node": "^6.0.96",
     "codelyzer": "~2.0.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",

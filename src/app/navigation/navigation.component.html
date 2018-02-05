@@ -15,6 +15,9 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/checkout">Checkout <span class="sr-only"></span></a>
       </li>
+      <li class="nav-item" *ngIf="! loginService.isUserLoggedIn()">
+        <a class="nav-link" routerLink="/login">Login <span class="sr-only"></span></a>
+      </li>
 
     </ul>
     <app-currency-switcher></app-currency-switcher>

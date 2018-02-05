@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoginService} from '../router/login/login.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
 
 }

@@ -37,6 +37,7 @@ import { CartService } from './cart.service';
 import {CartViewComponent} from './cart-view/cart-view.component';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
+import {SubjectExampleComponent} from './subject-example/subject-example.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -46,7 +47,7 @@ import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
     NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
-    LoaderViewChildComponent,
+    LoaderViewChildComponent, SubjectExampleComponent,
     CarouselComponent,
     CurrencySwitcherComponent,
     //CartViewComponent, CheckoutFormComponent, CheckoutViewComponent

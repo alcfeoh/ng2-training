@@ -32,11 +32,7 @@ import {SpinnerComponent} from "./spinner/spinner.component";
 import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CurrencySwitcherComponent } from './currency-switcher/currency-switcher.component';
 import { CartService } from './cart.service';
-import {CartViewComponent} from './cart-view/cart-view.component';
-import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
-import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
@@ -49,7 +45,7 @@ import {SubjectExampleComponent} from './subject-example/subject-example.compone
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent, SubjectExampleComponent,
     CarouselComponent,
-    CurrencySwitcherComponent,
+    // CurrencySwitcherComponent,
     //CartViewComponent, CheckoutFormComponent, CheckoutViewComponent
   ],
   imports: [

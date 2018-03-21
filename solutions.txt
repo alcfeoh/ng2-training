@@ -14,6 +14,8 @@ Both components can be found here:
   https://github.com/alcfeoh/ng-online-store/tree/master/src/app/jumbotron
   https://github.com/alcfeoh/ng-online-store/tree/master/src/app/navigation
 
+If you get the components from the above repository, rename their selector prefixes to "app-" instead of "ngs-"
+
 And src/app/app.component.ts  must use the following decorator config instead of 'template':
   templateUrl: './app.component.html'
 

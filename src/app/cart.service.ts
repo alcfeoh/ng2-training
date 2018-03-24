@@ -12,14 +12,12 @@ export class CartService {
     return this.http.get<LicensePlate[]>('http://localhost:8000/cart');
   }
 
-  addToCart(plate: LicensePlate): Observable<string> {
+  addToCart(plate: LicensePlate) {
     // TODO
-    return Observable.of("To be implemented");
   }
 
-  removeFromCart(plate: LicensePlate): Observable<string> {
+  removeFromCart(plate: LicensePlate) {
     // TODO
-    return Observable.of("To be implemented");
   }
 
 }

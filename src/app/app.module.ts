@@ -34,6 +34,7 @@ import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
+import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -45,8 +46,7 @@ import {SubjectExampleComponent} from './subject-example/subject-example.compone
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent, SubjectExampleComponent,
     CarouselComponent,
-    // CurrencySwitcherComponent,
-    //CartViewComponent, CheckoutFormComponent, CheckoutViewComponent
+    CurrencySwitcherComponent
   ],
   imports: [
     BrowserModule,

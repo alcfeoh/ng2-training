@@ -49,3 +49,13 @@ in the <h2> title tag.
 
 
 ----------------------------------------------------------------------------------
+LABS #7 to #23
+
+You can check the diff for every lab using the following URL format:
+https://github.com/alcfeoh/ng2-training/releases/tag/lab7
+https://github.com/alcfeoh/ng2-training/releases/tag/lab8
+https://github.com/alcfeoh/ng2-training/releases/tag/lab9
+
+and just use the right lab number at the end of the URL.
+
+----------------------------------------------------------------------------------

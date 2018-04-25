@@ -16,7 +16,7 @@ export class AppComponent {
       "onSale": false,
       "picture": "http://angulartraining.com/plates/GA.jpg",
       "title": "2008 Georgia license plate",
-      "price": 8,
+      "price": 8.55,
       "year": 2008,
       "state": "GA",
       "description": "Ad occaecat ex nisi reprehenderit dolore esse. Excepteur laborum fugiat sint tempor et in magna labore quis exercitation consequat nulla tempor occaecat. Sit cillum deserunt eiusmod proident labore mollit. Cupidatat do ullamco ipsum id nisi mollit pariatur nulla dolor sunt et nostrud qui.\r\n"

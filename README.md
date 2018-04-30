@@ -1,8 +1,13 @@
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0 and updated for Angular CLI 1.6.
+This project is updated for Angular 5 with Angular CLI 1.7.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+## Solutions for all labs
+
+Links to solutions can be found in `solutions.txt`.
 
 ## Code scaffolding
 

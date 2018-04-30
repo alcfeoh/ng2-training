@@ -14,6 +14,8 @@ Both components can be found here:
   https://github.com/alcfeoh/ng-online-store/tree/master/src/app/jumbotron
   https://github.com/alcfeoh/ng-online-store/tree/master/src/app/navigation
 
+If you get the components from the above repository, rename their selector prefixes to "app-" instead of "ngs-"
+
 And src/app/app.component.ts  must use the following decorator config instead of 'template':
   templateUrl: './app.component.html'
 
@@ -47,57 +49,13 @@ in the <h2> title tag.
 
 
 ----------------------------------------------------------------------------------
-LAB #7:
+LABS #7 to #23
 
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab7
-File diff at https://github.com/alcfeoh/ng2-training/commit/367df25d591911ec871182b492c20cd9d16c115d
+You can check the diff for every lab using the following URL format:
+https://github.com/alcfeoh/ng2-training/releases/tag/lab7
+https://github.com/alcfeoh/ng2-training/releases/tag/lab8
+https://github.com/alcfeoh/ng2-training/releases/tag/lab9
 
-----------------------------------------------------------------------------------
-LAB #8:
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab8
-File diff at https://github.com/alcfeoh/ng2-training/commit/7ec3c1409d3eb574ca7bcb48dfafef4ca4fbb43e
-
-----------------------------------------------------------------------------------
-LAB #9:
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab9
-File diff at https://github.com/alcfeoh/ng2-training/commit/c1e4b0caab76f45f00d3bd222945bc01db02a217
-
-----------------------------------------------------------------------------------
-LAB #10:
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab10
-File diff at https://github.com/alcfeoh/ng2-training/commit/7202708235b050219981bafb53d95be18448a23c
-
-----------------------------------------------------------------------------------
-LAB#11
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab11
-File diff at https://github.com/alcfeoh/ng2-training/commit/11a85e29ceeaa169df27c9010fa1427819d3a4e3
-
-----------------------------------------------------------------------------------
-LAB#12
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab12
-File diff at https://github.com/alcfeoh/ng2-training/commit/f16a904e8a9f666d2a5bf9343b34c319ed73feda
-
-----------------------------------------------------------------------------------
-LAB#13
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab13
-File diff at https://github.com/alcfeoh/ng2-training/commit/c70b38dc7e3d58e8b3bf933f8149d5614f6f3c9a
-
-----------------------------------------------------------------------------------
-LAB#14
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab14
-File diff at https://github.com/alcfeoh/ng2-training/commit/63fd79de4d39f91d1634705b11a99f3fa4499b49
-
-----------------------------------------------------------------------------------
-LAB#15
-
-Check solution at https://github.com/alcfeoh/ng2-training/releases/tag/lab15
-File diff at https://github.com/alcfeoh/ng2-training/commit/c00fcaeaa1bf1f0f656836157ef65f00a7d87fe7
+and just use the right lab number at the end of the URL.
 
 ----------------------------------------------------------------------------------

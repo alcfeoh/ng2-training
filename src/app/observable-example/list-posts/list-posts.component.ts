@@ -14,9 +14,6 @@ export class ListPostsComponent {
   constructor(postService : PostsService) {
     postService.getPosts()
       .subscribe(post => this.posts.push(post));
-
-    //postService.getPostsAsPromise()
-    // .then(posts => this.posts = posts);
   }
 }
 

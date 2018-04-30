@@ -1,28 +1,22 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs/Observable";
 import {Post} from "./post";
-import { map, take, switchMap } from "rxjs/operators";
-import { interval } from "rxjs/observable/interval";
+import {Subject} from 'rxjs/Subject';
+import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class PostsService {
 
-  constructor(private http: HttpClient) { }
+  postsSubject: Subject<Post> = new Subject<Post>();
 
-  getPosts() : Observable<Post> {
-    return this.http.get<Post[]>("http://localhost:8080/posts.json")
-      .pipe(
-        switchMap(postsData =>
-          interval(2000).pipe(
-            take(postsData.length),
-            map(index => postsData[index])
-          )
-        )
-    );
+  constructor(private http: HttpClient) {
+      setInterval(() => {
+        this.http.get<Post>("http://localhost:8000")
+          .subscribe(post => this.postsSubject.next(post));
+      }, 2000);
   }
 
-  getPostsAsPromise() : PromiseLike<Post[]> {
-    return this.http.get<Post[]>("http://localhost:8080/posts.json").toPromise();
+  getPosts() : Observable<Post> {
+    return this.postsSubject.asObservable();
   }
 }

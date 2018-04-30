@@ -1,0 +1,54 @@
+<form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate >
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Firstname" name="firstname" ngModel required>
+        </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Lastname" name="lastname" ngModel required>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Street" name="street" ngModel>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="City" name="city" ngModel>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Zip" name="zip" ngModel>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="State" name="state" ngModel>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="password" class="form-control" placeholder="Credit card number" name="cc" ngModel required>
+        <span class="input-group-addon" ><img src="assets/card-types/mastercard.png"/></span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

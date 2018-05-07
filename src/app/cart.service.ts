@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {LicensePlate} from './license-plate';
 import {HttpClient} from '@angular/common/http';
 

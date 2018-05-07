@@ -1,5 +1,5 @@
 
-This project is updated for Angular 5 with Angular CLI 1.7.
+This project is updated for Angular 6 with Angular CLI 6.0.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

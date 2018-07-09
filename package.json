@@ -35,6 +35,7 @@
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
     "typescript": "2.7.2",
+    "codelyzer": "^4.4.2",
     "@angular/cli": "^6.0.8",
     "@angular/compiler-cli": "^6.0.7",
     "@types/jasmine": "2.5.38",

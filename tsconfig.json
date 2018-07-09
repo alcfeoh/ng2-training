@@ -15,6 +15,14 @@
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "paths": {
+      "EnumUtils": [
+        "dist/enum-utils"
+      ],
+      "EnumUtils/*": [
+        "dist/enum-utils/*"
+      ]
+    }
   }
 }

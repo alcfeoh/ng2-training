@@ -35,6 +35,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
+import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -50,6 +51,7 @@ import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.c
   ],
   imports: [
     BrowserModule,
+    EnumUtilsModule,
     FormsModule,
     HttpClientModule,
     RouterModule , routing

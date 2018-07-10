@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import {Post} from "./post";
-import {PostsService} from "./posts.service";
+import {Component} from '@angular/core';
+import {Post} from './post';
+import {PostsService} from './posts.service';
 
 @Component({
   selector: 'app-list-posts',
@@ -9,9 +9,9 @@ import {PostsService} from "./posts.service";
 })
 export class ListPostsComponent {
 
-  posts : Post[] = [];
+  posts: Post[] = [];
 
-  constructor(postService : PostsService) {
+  constructor(postService: PostsService) {
     postService.getPosts()
       .subscribe(post => this.posts.push(post));
   }

@@ -3,24 +3,25 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class LoginService {
 
-  private isLoggedIn: boolean = false;
-  private currentUser : string;
+  private isLoggedIn = false;
+  private currentUser: string;
 
   constructor() { }
 
   login(username, password) {
-    if (username == "admin") {
+    if (username === 'admin') {
       this.currentUser = username;
       this.isLoggedIn = true;
-    }else
+    } else {
       this.isLoggedIn = false;
+    }
   }
 
-  isUserLoggedIn(){
+  isUserLoggedIn() {
     return this.isLoggedIn;
   }
 
-  getCurrentUser(){
+  getCurrentUser() {
     return this.currentUser;
   }
 

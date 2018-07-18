@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
 
-  name : string;
+  name: string;
 
   constructor() {
     this.name = 'Angular';

@@ -11,7 +11,8 @@ export class LoginComponent {
   constructor(private loginService: LoginService) { }
 
   login(username, password) {
-    this.loginService.login(username, password);
+    this.loginService.login(username, password)
+      .subscribe(token => console.log('Succesfully logged in'));
   }
 
 }

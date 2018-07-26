@@ -12,7 +12,9 @@ export class ListPostsComponent {
   posts: Post[] = [];
 
   constructor(postService: PostsService) {
+    // We get an observable from PostService
     postService.getPosts()
+    // We subscribe to the observable, and add every single post to an array of posts
       .subscribe(post => this.posts.push(post));
   }
 }

@@ -1,0 +1,10 @@
+<h2>Latest posts from our favorite social media:</h2>
+<div>
+  <div class="post" *ngFor="let post of posts">
+    <strong>From:</strong> {{post.name | titlecase}} ({{post.email}})
+    <br> <br>
+    <strong>Message:</strong>
+    <br>
+    {{post.body}}
+  </div>
+</div>

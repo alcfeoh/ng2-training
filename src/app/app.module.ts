@@ -29,7 +29,6 @@ import { HeaderComponent } from './header/header.component';
 import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.component";
 import {EvenUppercasePipe} from "./pipe-solution/even-uppercase.pipe";
 import {SpinnerComponent} from "./spinner/spinner.component";
-import {TwoWayDataBindingExampleComponent} from "./two-way-data-binding-example/two-way-data-binding-example.component";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
@@ -42,7 +41,7 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
   declarations: [
     AppComponent, HelloComponent, BindingsComponent, LicensePlateComponent,
     HidingComponent, ModelComponent, EvenUppercasePipe,
-    NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent, TwoWayDataBindingExampleComponent,
+    NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
     PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent, SubjectExampleComponent,

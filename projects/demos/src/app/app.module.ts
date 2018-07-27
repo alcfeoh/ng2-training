@@ -7,15 +7,19 @@ import {routing} from './app.routing';
 import {ListPostsComponent} from './observable-example/list-posts/list-posts.component';
 import {PostsService} from './observable-example/list-posts/posts.service';
 import {HttpClientModule} from '@angular/common/http';
+import {TwoWayDataBindingExampleComponent} from './two-way-data-binding-example/two-way-data-binding-example.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListPostsComponent
+    ListPostsComponent,
+    TwoWayDataBindingExampleComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule, routing
   ],
   providers: [PostsService],

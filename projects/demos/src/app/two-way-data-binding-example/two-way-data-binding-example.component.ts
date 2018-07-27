@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import {Component, Input, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-two-way-data-binding-example',

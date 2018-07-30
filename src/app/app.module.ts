@@ -5,7 +5,7 @@ import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
-import { BindingsComponent } from './bindings/bindings.component';
+import { BindingsComponent } from '../../projects/demos/src/app/bindings/bindings.component';
 import {HidingComponent} from "./hiding/hiding.component";
 import {ModelComponent} from "./model/model.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
@@ -17,10 +17,7 @@ import { PromiseExampleComponent } from './promise-example/promise-example.compo
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
-import {ObservableExampleComponent} from "./observable-example/observable-example.component";
 import {NgforComponent} from "./ngfor/ngfor.component";
-import { ListPostsComponent } from './observable-example/list-posts/list-posts.component';
-import {PostsService} from "./observable-example/list-posts/posts.service";
 import { NgClassComponent } from './ng-class/ng-class.component';
 import {HttpClientModule} from "@angular/common/http";
 import { PopupWindowComponent } from './popup-window/popup-window.component';
@@ -42,7 +39,7 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
     AppComponent, HelloComponent, BindingsComponent, LicensePlateComponent,
     HidingComponent, ModelComponent, EvenUppercasePipe,
     NgswitchComponent, FormsComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, ObservableExampleComponent, LoginComponent, NgforComponent, ListPostsComponent,
+    PromiseExampleComponent, LoginComponent, NgforComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent, SubjectExampleComponent,
     CarouselComponent,
@@ -56,7 +53,7 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, PostsService, CartService],
+  providers: [AuthGuard, LoginService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

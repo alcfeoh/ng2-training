@@ -3,10 +3,10 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-forms',
-  templateUrl: 'forms.component.html',
-  styleUrls: ['forms.component.css']
+  templateUrl: 'reactive-form.component.html',
+  styleUrls: ['template-driven-form.component.css']
 })
-export class FormsComponent implements OnInit {
+export class ReactiveFormComponent implements OnInit {
 
   registerForm: FormGroup;
 
@@ -18,12 +18,12 @@ export class FormsComponent implements OnInit {
       lastname: '',
       street: '',
       zip: ['', [Validators.required, Validators.pattern('[0-9]{5}')]],
-      city: ''
+      city: '',
+      cc: ['', [Validators.required] ]
     })
   }
 
-  logForm(value: any) {
-    console.log(value);
+  logForm() {
+    console.log(this.registerForm.value);
   }
-
 }

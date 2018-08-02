@@ -1,4 +1,4 @@
-<form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate >
+<form #form="ngForm" (ngSubmit)="logForm(form.value)"  >
   <label>Firstname:</label>
   <input type="text" name="firstname" ngModel required>
   <br/>
@@ -9,13 +9,17 @@
   <input type="text" name="street" ngModel>
   <br/>
   <label>Zip:</label>
-  <input type="text" name="zip" ngModel>
+  <div class="alert" *ngIf="zip.invalid">Please enter a 5-digit zipcode</div>
+  <input type="text" name="zip" ngModel required pattern="[0-9]{5}"
+      #zip="ngModel"
+  >
   <br/>
   <label>City:</label>
   <input type="text" name="city" ngModel>
   <br/>
   <label>Credit card:</label>
-  <input type="password" name="cc" ngModel>
+  <div class="alert" *ngIf="cc.invalid">Please enter a 5-digit zipcode</div>
+  <input type="password" name="cc" #cc="ngModel" ngModel appCreditCardValidator>
   <br/>
   <button type="submit">Submit</button>
 </form>

@@ -19,6 +19,9 @@
   <br/>
   <label>Credit card:</label>
   <input type="password" name="cc" formControlName="cc">
+  <div class="alert" *ngIf="registerForm.controls.cc.errors">
+    {{registerForm.controls.cc.errors['creditCard'] }}
+  </div>
   <br/>
   <button type="submit">Submit</button>
 </form>

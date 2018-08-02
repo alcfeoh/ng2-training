@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {AbstractControl, FormBuilder, FormGroup, ValidationErrors, Validators} from "@angular/forms";
+import {CreditCardValidatorDirective} from '../credit-card-validator.directive';
 
 @Component({
   selector: 'app-forms',
@@ -19,7 +20,7 @@ export class ReactiveFormComponent implements OnInit {
       street: '',
       zip: ['', [Validators.required, Validators.pattern('[0-9]{5}')]],
       city: '',
-      cc: ['', [Validators.required] ]
+      cc: ['', [Validators.required, CreditCardValidatorDirective.validateCcNumber] ]
     })
   }
 

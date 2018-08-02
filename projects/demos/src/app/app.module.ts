@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import {TemplateDrivenFormComponent} from './forms/template-driven-form.component';
 import {ReactiveFormComponent} from './forms/reactive-form.component';
 import { CreditCardValidatorDirective } from './forms/credit-card-validator.directive';
+import {HidingComponent} from './hiding/hiding.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreditCardValidatorDirective } from './forms/credit-card-validator.dire
     ListPostsComponent,
     TwoWayDataBindingExampleComponent,
     MenuComponent,
-    TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective
+    TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
+    HidingComponent
   ],
   imports: [
     BrowserModule,

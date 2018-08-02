@@ -7,6 +7,7 @@ import {BindingsComponent} from './bindings';
 import {MenuComponent} from './menu/menu.component';
 import {TemplateDrivenFormComponent} from './forms/template-driven-form.component';
 import {ReactiveFormComponent} from './forms/reactive-form.component';
+import {HidingComponent} from './hiding/hiding.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,8 @@ const appRoutes: Routes = [
     path: 'template-driven-form', component: TemplateDrivenFormComponent
   },{
     path: 'reactive-form', component: ReactiveFormComponent
+  },{
+    path: 'ngif', component: HidingComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -13,7 +13,7 @@ import {BindingsComponent} from './bindings';
 import { MenuComponent } from './menu/menu.component';
 import {TemplateDrivenFormComponent} from './forms/template-driven-form.component';
 import {ReactiveFormComponent} from './forms/reactive-form.component';
-import { CreditCardValidatorDirective } from './credit-card-validator.directive';
+import { CreditCardValidatorDirective } from './forms/credit-card-validator.directive';
 
 @NgModule({
   declarations: [

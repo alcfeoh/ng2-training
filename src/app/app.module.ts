@@ -5,7 +5,6 @@ import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
-import {ModelComponent} from "./model/model.component";
 import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
@@ -34,7 +33,7 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
-    ModelComponent, EvenUppercasePipe,
+    EvenUppercasePipe,
     NgswitchComponent, RouterComponent, JasmineTestComponent,
     PromiseExampleComponent, LoginComponent, NgforComponent,
     NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,

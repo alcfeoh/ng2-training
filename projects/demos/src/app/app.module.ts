@@ -15,6 +15,7 @@ import {TemplateDrivenFormComponent} from './forms/template-driven-form.componen
 import {ReactiveFormComponent} from './forms/reactive-form.component';
 import { CreditCardValidatorDirective } from './forms/credit-card-validator.directive';
 import {HidingComponent} from './hiding/hiding.component';
+import {ModelComponent} from './model/model.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {HidingComponent} from './hiding/hiding.component';
     TwoWayDataBindingExampleComponent,
     MenuComponent,
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
-    HidingComponent
+    HidingComponent, ModelComponent
   ],
   imports: [
     BrowserModule,

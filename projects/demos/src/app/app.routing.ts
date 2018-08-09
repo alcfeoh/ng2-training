@@ -9,11 +9,14 @@ import {TemplateDrivenFormComponent} from './forms/template-driven-form.componen
 import {ReactiveFormComponent} from './forms/reactive-form.component';
 import {HidingComponent} from './hiding/hiding.component';
 import {ModelComponent} from './model/model.component';
+import {ObservableExampleComponent} from './observable-example/observable-example.component';
 
 const appRoutes: Routes = [
   {
     path: '', component: MenuComponent
   }, {
+    path: 'observable-example', component: ObservableExampleComponent
+  },{
     path: 'list-posts', component: ListPostsComponent
   },{
     path: '2-way-data-binding', component: TwoWayDataBindingExampleComponent

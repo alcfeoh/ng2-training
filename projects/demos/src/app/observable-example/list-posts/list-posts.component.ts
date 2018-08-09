@@ -11,9 +11,23 @@ export class ListPostsComponent {
 
   posts: Post[] = [];
 
-  constructor(postService: PostsService) {
+  constructor(private postService: PostsService) {
+     // This will only retrieve one post
+     this.fetchNextPost();
+     // This will subscribe to a stream of posts, updated every 2 seconds
+     //this.subscribeToPostsStream();
+  }
+
+  fetchNextPost() {
     // We get an observable from PostService
-    postService.getPosts()
+    this.postService.getNextPost()
+    // We subscribe to the observable, and add the new post to an array of posts
+      .subscribe(post => this.posts.push(post));
+  }
+
+  subscribeToPostsStream() {
+    // We get an observable from PostService
+    this.postService.getPosts()
     // We subscribe to the observable, and add every single post to an array of posts
       .subscribe(post => this.posts.push(post));
   }

@@ -16,12 +16,13 @@ import {ReactiveFormComponent} from './forms/reactive-form.component';
 import { CreditCardValidatorDirective } from './forms/credit-card-validator.directive';
 import {HidingComponent} from './hiding/hiding.component';
 import {ModelComponent} from './model/model.component';
+import {ObservableExampleComponent} from './observable-example/observable-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingsComponent,
-    ListPostsComponent,
+    ListPostsComponent, ObservableExampleComponent,
     TwoWayDataBindingExampleComponent,
     MenuComponent,
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,

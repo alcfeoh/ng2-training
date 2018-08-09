@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "node node_modules/lp-store-server/solutions/index.js"
+    "server": "node node_modules/lp-store-server/solutions/index.js",
+    "cleanup": "git clean -fd"
   },
   "private": true,
   "dependencies": {

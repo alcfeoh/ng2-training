@@ -11,7 +11,7 @@ export class SubjectExampleComponent {
   constructor() {
 
     console.log("Creating subject");
-    let subject = new Subject<string>();
+    const subject = new Subject<string>();
 
     let i = 0;
 
@@ -23,7 +23,7 @@ export class SubjectExampleComponent {
       console.log("First subscriber got data >>>>> "+ data);
     });
 
-    let secondSubscription = subject.asObservable().subscribe((data) => {
+    const secondSubscription = subject.asObservable().subscribe((data) => {
       console.log("Second subscriber got data >>>>> "+ data);
     });
 

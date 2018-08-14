@@ -13,12 +13,19 @@ import {ObservableExampleComponent} from './observable-example/observable-exampl
 import {NgforComponent} from './ngfor/ngfor.component';
 import {NgClassComponent} from './ngclass/ng-class.component';
 import {NgSwitchComponent} from './ngswitch/ng-switch.component';
+import {SubjectExampleComponent} from './subject-example/subject-example.component';
+import {PromiseExampleComponent} from './promise-example/promise-example.component';
+import {SpinnerComponent} from './spinner/spinner.component';
 
 const appRoutes: Routes = [
   {
     path: '', component: MenuComponent
   }, {
     path: 'observable-example', component: ObservableExampleComponent
+  }, {
+    path: 'subject-example', component: SubjectExampleComponent
+  }, {
+    path: 'promise-example', component: PromiseExampleComponent
   }, {
     path: 'list-posts', component: ListPostsComponent
   }, {
@@ -39,6 +46,8 @@ const appRoutes: Routes = [
     path: 'ngclass', component: NgClassComponent
   }, {
     path: 'ngswitch', component: NgSwitchComponent
+  }, {
+    path: 'spinner', component: SpinnerComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

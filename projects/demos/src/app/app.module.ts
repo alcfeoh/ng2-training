@@ -20,6 +20,9 @@ import {ObservableExampleComponent} from './observable-example/observable-exampl
 import {NgforComponent} from './ngfor/ngfor.component';
 import {NgClassComponent} from './ngclass/ng-class.component';
 import {NgSwitchComponent} from './ngswitch/ng-switch.component';
+import {PromiseExampleComponent} from './promise-example/promise-example.component';
+import {SubjectExampleComponent} from './subject-example/subject-example.component';
+import {SpinnerComponent} from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import {NgSwitchComponent} from './ngswitch/ng-switch.component';
     MenuComponent,
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
-    NgforComponent, NgClassComponent, NgSwitchComponent
+    NgforComponent, NgClassComponent, NgSwitchComponent,
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent
   ],
   imports: [
     BrowserModule,

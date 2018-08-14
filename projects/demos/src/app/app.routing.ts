@@ -10,26 +10,35 @@ import {ReactiveFormComponent} from './forms/reactive-form.component';
 import {HidingComponent} from './hiding/hiding.component';
 import {ModelComponent} from './model/model.component';
 import {ObservableExampleComponent} from './observable-example/observable-example.component';
+import {NgforComponent} from './ngfor/ngfor.component';
+import {NgClassComponent} from './ngclass/ng-class.component';
+import {NgSwitchComponent} from './ngswitch/ng-switch.component';
 
 const appRoutes: Routes = [
   {
     path: '', component: MenuComponent
   }, {
     path: 'observable-example', component: ObservableExampleComponent
-  },{
+  }, {
     path: 'list-posts', component: ListPostsComponent
-  },{
+  }, {
     path: '2-way-data-binding', component: TwoWayDataBindingExampleComponent
-  },{
+  }, {
     path: 'bindings', component: BindingsComponent
-  },{
+  }, {
     path: 'template-driven-form', component: TemplateDrivenFormComponent
-  },{
+  }, {
     path: 'reactive-form', component: ReactiveFormComponent
-  },{
+  }, {
     path: 'ngif', component: HidingComponent
-  },{
+  }, {
     path: 'ngmodel', component: ModelComponent
+  }, {
+    path: 'ngfor', component: NgforComponent
+  }, {
+    path: 'ngclass', component: NgClassComponent
+  }, {
+    path: 'ngswitch', component: NgSwitchComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

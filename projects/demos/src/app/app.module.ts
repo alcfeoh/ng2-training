@@ -17,6 +17,9 @@ import { CreditCardValidatorDirective } from './forms/credit-card-validator.dire
 import {HidingComponent} from './hiding/hiding.component';
 import {ModelComponent} from './model/model.component';
 import {ObservableExampleComponent} from './observable-example/observable-example.component';
+import {NgforComponent} from './ngfor/ngfor.component';
+import {NgClassComponent} from './ngclass/ng-class.component';
+import {NgSwitchComponent} from './ngswitch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import {ObservableExampleComponent} from './observable-example/observable-exampl
     TwoWayDataBindingExampleComponent,
     MenuComponent,
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
-    HidingComponent, ModelComponent
+    HidingComponent, ModelComponent,
+    NgforComponent, NgClassComponent, NgSwitchComponent
   ],
   imports: [
     BrowserModule,

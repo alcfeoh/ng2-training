@@ -5,7 +5,6 @@ import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
-import {NgswitchComponent} from "./ngswitch/ngswitch.component";
 import { routing } from './app.routing';
 import { RouterComponent } from './router/router.component';
 import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
@@ -13,8 +12,6 @@ import { PromiseExampleComponent } from './promise-example/promise-example.compo
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
-import {NgforComponent} from "./ngfor/ngfor.component";
-import { NgClassComponent } from './ng-class/ng-class.component';
 import {HttpClientModule} from "@angular/common/http";
 import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
@@ -34,9 +31,9 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
     EvenUppercasePipe,
-    NgswitchComponent, RouterComponent, JasmineTestComponent,
-    PromiseExampleComponent, LoginComponent, NgforComponent,
-    NgClassComponent, PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
+    RouterComponent, JasmineTestComponent,
+    PromiseExampleComponent, LoginComponent,
+    PopupWindowComponent, LoaderComponent, HeaderComponent, SpinnerComponent,
     LoaderViewChildComponent, SubjectExampleComponent,
     CarouselComponent,
     CurrencySwitcherComponent

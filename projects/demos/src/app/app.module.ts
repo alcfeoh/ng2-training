@@ -23,6 +23,7 @@ import {NgSwitchComponent} from './ngswitch/ng-switch.component';
 import {PromiseExampleComponent} from './promise-example/promise-example.component';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 import {SpinnerComponent} from './spinner/spinner.component';
+import { WrapperComponent } from './spinner/wrapper.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {SpinnerComponent} from './spinner/spinner.component';
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent
   ],
   imports: [
     BrowserModule,

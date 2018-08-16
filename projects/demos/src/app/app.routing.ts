@@ -15,7 +15,7 @@ import {NgClassComponent} from './ngclass/ng-class.component';
 import {NgSwitchComponent} from './ngswitch/ng-switch.component';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 import {PromiseExampleComponent} from './promise-example/promise-example.component';
-import {SpinnerComponent} from './spinner/spinner.component';
+import {WrapperComponent} from './spinner/wrapper.component';
 
 const appRoutes: Routes = [
   {
@@ -47,7 +47,7 @@ const appRoutes: Routes = [
   }, {
     path: 'ngswitch', component: NgSwitchComponent
   }, {
-    path: 'spinner', component: SpinnerComponent
+    path: 'spinner', component: WrapperComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

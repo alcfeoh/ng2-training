@@ -1,0 +1,9 @@
+<h2>{{plate.title}} <img *ngIf="plate.onSale" src="assets/sale.png" class="sale" /></h2>
+<img [src]="plate.picture" class="img-fluid" >
+<p>{{plate.description}}</p>
+<div>
+  <h2 class="float-left">${{plate.price}}</h2>
+  <button class="btn btn-primary float-right" role="button" (click)="buttonClicked()">
+    {{buttonText}}
+  </button>
+</div>

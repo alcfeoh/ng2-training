@@ -1,61 +1,11 @@
 LAB #1:
 No solution - just run the commands in a terminal
 
-----------------------------------------------------------------------------------
-LAB #2:
-Solution located in the directory:
-  src/app/hello/solution
+---------------------------------------------------------------------------------------------------
+LAB #2 and further:
 
-The name of the selector also has to be changed in src/app/app.component.ts
+Run the following command:
+ npm run solution lab2
 
-----------------------------------------------------------------------------------
-LAB #3:
-Both components can be found here:
-  https://github.com/alcfeoh/ng-online-store/tree/master/src/app/jumbotron
-  https://github.com/alcfeoh/ng-online-store/tree/master/src/app/navigation
-
-If you get the components from the above repository, rename their selector prefixes to "app-" instead of "ngs-"
-
-And src/app/app.component.ts  must use the following decorator config instead of 'template':
-  templateUrl: './app.component.html'
-
-----------------------------------------------------------------------------------
-LAB #4:
-Add <app-license-plate [plate]="licensePlate" buttonText="Add to cart" class="col-md-4"></app-license-plate>
-to src/app/app.component.html where the comment <!-- License plates go here --> is located
-
-Edit src/app/license-plate/license-plate.component.html to add {{plate.price}} instead of xx
-as well as (click)="alert('Plate added to cart')"  to the button.
-
-Edit src/app/license-plate/license-plate.component.ts to add the following method:
-  alert(message) {
-    alert(message);
-  }
-----------------------------------------------------------------------------------
-LAB #5:
-Edit src/app/app.component.html:
-<app-license-plate *ngFor="let plate of licensePlates;let o = odd" [style.background-color]="o ? '' : '#F5F5F5'"
-                         [plate]="plate" buttonText="Add to cart"
-                         class="col-md-4">
-
-</app-license-plate>
-
-----------------------------------------------------------------------------------
-LAB #6:
-
-Edit src/app/license-plate/license-plate.component.html to add
-<img src="assets/sale.png" class="sale" *ngIf="plate.onSale" />
-in the <h2> title tag.
-
-
-----------------------------------------------------------------------------------
-LABS #7 to #23
-
-You can check the diff for every lab using the following URL format:
-https://github.com/alcfeoh/ng2-training/releases/tag/lab7
-https://github.com/alcfeoh/ng2-training/releases/tag/lab8
-https://github.com/alcfeoh/ng2-training/releases/tag/lab9
-
-and just use the right lab number at the end of the URL.
-
-----------------------------------------------------------------------------------
+ This will copy-paste the solution for that lab from the "solutions" folder into the "app" folder
+ --------------------------------------------------------------------------------------------------

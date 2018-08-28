@@ -1,0 +1,10 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" (click)="showItems = ! showItems">
+    {{ service.getCurrency() }}
+  </button>
+  <div class="dropdown-menu show" [class.show]="showItems">
+    <a class="dropdown-item" (click)="changeCurrency('USD')" >USD ($)</a>
+    <a class="dropdown-item" (click)="changeCurrency('EUR')" >EUR (€)</a>
+    <a class="dropdown-item" (click)="changeCurrency('GBP')" >GBP (£)</a>
+  </div>
+</div>

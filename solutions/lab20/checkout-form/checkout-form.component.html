@@ -1,0 +1,67 @@
+<form [formGroup]="registerForm" (ngSubmit)="logForm()" >
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Firstname" name="firstname"formControlName="firstname">
+        </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Lastname" name="lastname" formControlName="lastname">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Street" name="street" formControlName="street">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="City" name="city" formControlName="city">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="alert alert-danger" role="alert" *ngIf=" !registerForm.controls.zip.pristine && registerForm.controls.zip.errors">
+        Please enter a 5-digit zipcode
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Zip" name="zip" formControlName="zip">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <select name="state" formControlName="state" class="form-control" placeholder="state">
+          <option *ngFor="let state of states | async" [value]="state.abbreviation">{{state.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="alert alert-danger" role="alert" *ngIf="registerForm.controls.cc.errors && registerForm.controls.cc.errors['WRONG_CARD_TYPE']">
+          {{registerForm.controls.cc.errors['WRONG_CARD_TYPE']}}
+        </div>
+        <div class="alert alert-danger" role="alert" [hidden]="registerForm.controls.cc.valid || registerForm.controls.cc.pristine">
+          Please enter a 16-digit credit card number
+        </div>
+      <div class="input-group">
+        <input type="password" class="form-control" placeholder="Credit card number" name="cc" formControlName="cc">
+        <span class="input-group-addon" ><img src="assets/card-types/mastercard.png"/></span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<app-popup-window title="Order complete" (onClose)="goToHome()" [isOpen]="showPopup">Your order will ship within 24 hours</app-popup-window>

@@ -7,7 +7,7 @@ fdescribe('CurrencyRendererPipe', () => {
 
     it('create an instance', () => {
       const pipe = new CurrencyRendererPipe(service);
-      expect(pipe).toBeTruthy();	    expect(pipe).toBeTruthy();
+      expect(pipe).toBeTruthy();
     });
 
     it('should format USD amounts properly', () => {

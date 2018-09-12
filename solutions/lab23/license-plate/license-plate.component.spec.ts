@@ -47,7 +47,7 @@ fdescribe('LicensePlateComponent', () => {
   });
 
   it('should have the right button text', () => {
-    const title = debugElement.query(By.css('button')).nativeElement.textContent;
-    expect(title).toContain('Add to cart');
+    const btnText = debugElement.query(By.css('button')).nativeElement.textContent;
+    expect(btnText).toContain('Add to cart');
   });
 });

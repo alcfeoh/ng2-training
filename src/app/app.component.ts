@@ -9,7 +9,7 @@ import {LicensePlate} from './license-plate';
 })
 export class AppComponent {
 
-  // This is for lab #4
+  // This is for lab #5
   licensePlates: LicensePlate[] = [
     {
       "_id": "5a0c8ab22d8dc1f7fa170c9d",
@@ -93,6 +93,6 @@ export class AppComponent {
     }
   ];
 
-  // This is for lab #3
+  // This is for lab #4
   licensePlate: LicensePlate = this.licensePlates[2];
 }

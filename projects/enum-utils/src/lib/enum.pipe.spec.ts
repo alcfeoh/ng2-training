@@ -10,6 +10,6 @@ describe('EnumPipe', () => {
 
   it('create an instance', () => {
     const pipe = new EnumPipe();
-    expect(pipe.transform(Test)).toBe(['This', 'Should', 'Work']);
+    expect(pipe.transform(Test)).toEqual(['This', 'Should', 'Work']);
   });
 });

@@ -15,3 +15,7 @@ input[type=text].ng-invalid {
   color: darkred;
   background-color: tomato;
 }
+
+span.badge {
+  margin: 10px;
+}

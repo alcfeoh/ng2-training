@@ -1,3 +1,12 @@
+<div>
+  <span>Form state: </span>
+  <span class="badge badge-pill badge-info" *ngIf="form.touched">Touched</span>
+  <span class="badge badge-pill badge-warning" *ngIf="form.untouched">Untouched</span>
+  <span class="badge badge-pill badge-success" *ngIf="form.valid">Valid</span>
+  <span class="badge badge-pill badge-danger" *ngIf="form.invalid">Invalid</span>
+  <span class="badge badge-pill badge-primary" *ngIf="form.pristine">Pristine</span>
+  <span class="badge badge-pill badge-dark" *ngIf="form.dirty">Dirty</span>
+</div>
 <form #form="ngForm" (ngSubmit)="logForm(form.value)"  >
   <label>Firstname:</label>
   <input type="text" name="firstname" ngModel required>
@@ -23,3 +32,4 @@
   <br/>
   <button type="submit">Submit</button>
 </form>
+

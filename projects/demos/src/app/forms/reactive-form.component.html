@@ -1,3 +1,12 @@
+<div>
+  <span>Form state: </span>
+  <span class="badge badge-pill badge-info" *ngIf="registerForm.touched">Touched</span>
+  <span class="badge badge-pill badge-warning" *ngIf="registerForm.untouched">Untouched</span>
+  <span class="badge badge-pill badge-success" *ngIf="registerForm.valid">Valid</span>
+  <span class="badge badge-pill badge-danger" *ngIf="registerForm.invalid">Invalid</span>
+  <span class="badge badge-pill badge-primary" *ngIf="registerForm.pristine">Pristine</span>
+  <span class="badge badge-pill badge-dark" *ngIf="registerForm.dirty">Dirty</span>
+</div>
 <form [formGroup]="registerForm" (ngSubmit)="logForm()">
   <label>Firstname:</label>
   <input type="text" name="firstname" formControlName="firstname" >

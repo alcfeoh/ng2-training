@@ -24,13 +24,14 @@ import {PromiseExampleComponent} from './promise-example/promise-example.compone
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 import {SpinnerComponent} from './spinner/spinner.component';
 import { WrapperComponent } from './spinner/wrapper.component';
+import {MessageComponent} from './two-way-data-binding-example/message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingsComponent,
     ListPostsComponent, ObservableExampleComponent,
-    TwoWayDataBindingExampleComponent,
+    TwoWayDataBindingExampleComponent, MessageComponent,
     MenuComponent,
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,

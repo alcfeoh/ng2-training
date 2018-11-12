@@ -7,9 +7,6 @@ install:
   - npm install -g @angular/cli
   - npm install
 
-build:
-  - ng build --prod
-
 sudo: false
 
 branches:

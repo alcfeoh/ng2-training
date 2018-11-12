@@ -1,5 +1,6 @@
+[![Build Status](https://travis-ci.org/alcfeoh/ng2-training.png)](https://travis-ci.org/alcfeoh/ng2-training)
 
-This project is updated for Angular 6 with Angular CLI 6.0.
+This project is updated for Angular 7 with Angular CLI 7.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

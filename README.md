@@ -5,14 +5,17 @@ This project is updated for Angular 7 with Angular CLI 7.
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Demos
+Run `ng serve demos` to start the demos app. Navigate to `http://localhost:4201/`. The main menu will render and you can access individual examples from there.
 
 ## Solutions for all labs
 
-Links to solutions can be found in `solutions.txt`.
+In order to get the solution for labs 2 and after, just run: `npm run solution lab2`  
+This will copy-paste the solution for that lab from the "solutions" folder into the "app" folder
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/guard/module` and more.
 
 ## Build
 

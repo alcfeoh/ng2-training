@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My first page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Verdana;
+    }
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p id="paragraph">
+    This is a paragraph with some text in it.
+  </p>
+  <a href="http://www.google.com">Link to Google website</a>
+  <p>
+    <img src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2016/MIT-Earth-Dish_0.jpg" style="width: 300px"/>
+  </p>
+  <button onclick="changeBackground('test')" id="btn">Change paragraph background</button>
+
+<script>
+  function changeBackground() {
+    document.getElementById("paragraph").style.backgroundColor = "yellow";
+    document.getElementById("btn").hidden = true;
+  }
+</script>
+</body>
+</html>

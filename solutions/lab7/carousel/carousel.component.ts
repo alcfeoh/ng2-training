@@ -10,7 +10,7 @@ export class CarouselComponent {
   slide = 0;
 
   constructor() {
-    setInterval(() => this.nextSlide(), 5000);
+    //setInterval(() => this.nextSlide(), 5000);
   }
 
   nextSlide() {

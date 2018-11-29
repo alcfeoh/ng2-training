@@ -17,7 +17,7 @@ export class CartService {
   }
 
   removeFromCart(plate: LicensePlate) {
-    // TODO
+    return this.http.delete<any>('http://localhost:8000/cart/' + plate._id);
   }
 
 }

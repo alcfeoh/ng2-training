@@ -16,7 +16,7 @@ export class CartViewComponent {
   }
 
   removeFromCart(plate: LicensePlate) {
-    // TODO
+    this.service.removeFromCart(plate).subscribe(() => this.service.getCartContents().subscribe(data => this.cartContents = data));
   }
 
 }

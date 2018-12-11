@@ -8,6 +8,7 @@ export class LoginService {
 
   private isLoggedIn = false;
   private currentUser: string;
+  private authToken: string;
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +18,7 @@ export class LoginService {
         tap(data => {
           this.currentUser = username;
           this.isLoggedIn = true;
+          this.authToken = data['token'];
         }),
         map(tokenObj => tokenObj['token'])
       );
@@ -30,4 +32,7 @@ export class LoginService {
     return this.currentUser;
   }
 
+  getAuthToken() {
+    return this.authToken;
+  }
 }

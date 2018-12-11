@@ -10,7 +10,7 @@ import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +21,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
+import {TokenInterceptorService} from './token-http-interceptor.service';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -41,7 +42,7 @@ import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.modu
     RouterModule , routing
     //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, CartService],
+  providers: [AuthGuard, LoginService, CartService,  {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

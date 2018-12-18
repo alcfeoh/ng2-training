@@ -1,22 +1,32 @@
 const posts = require('./data/posts.json');
-const http = require('http');
+var ws = require("nodejs-websocket");
 const port = 8000;
 
-const server = http.createServer(
-  (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Request-Method', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
-    res.setHeader('Access-Control-Allow-Headers', '*');
-    res.end(JSON.stringify(getRandomPost()))
-  }
-);
+var server = ws.createServer(function (conn) {
+  console.log("New connection received ");
+  sendPostAndWaitBeforeSendingNext(conn);
+  conn.on("close", function (code, reason) {
+    console.log("Connection closed")
+  })
+});
 
 server.listen(port, (err) => {
   console.log(`server listening on ${port}`)
 });
 
+function sendPostAndWaitBeforeSendingNext(conn) {
+  setTimeout(() => {
+    conn.sendText(JSON.stringify(getRandomPost()));
+    console.log("Sent a new post");
+    sendPostAndWaitBeforeSendingNext(conn);
+  }, getRandomWait())
+}
+
 function getRandomPost() {
   return posts[Math.floor(Math.random() * Math.floor(500))];
+}
+
+function getRandomWait() {
+  return Math.floor(Math.random() * 6000);
 }
 

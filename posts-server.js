@@ -7,7 +7,10 @@ var server = ws.createServer(function (conn) {
   sendPostAndWaitBeforeSendingNext(conn);
   conn.on("close", function (code, reason) {
     console.log("Connection closed")
-  })
+  });
+  conn.on("error", function(){
+    console.log("Error - Connection lost")
+  });
 });
 
 server.listen(port, (err) => {
@@ -19,7 +22,7 @@ function sendPostAndWaitBeforeSendingNext(conn) {
     conn.sendText(JSON.stringify(getRandomPost()));
     console.log("Sent a new post");
     sendPostAndWaitBeforeSendingNext(conn);
-  }, getRandomWait())
+  }, getRandomWait());
 }
 
 function getRandomPost() {

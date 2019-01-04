@@ -1,31 +1,39 @@
 import { Injectable } from '@angular/core';
 import {Currency} from './currency-switcher/currency';
+import {HttpClient} from '@angular/common/http';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
+
+export interface Rates {
+  EUR: number;
+  GBP: number;
+}
+
+export interface CurrencyInfo {
+  currency: Currency;
+  changeRate: number;
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class CurrencyService {
 
-  currency$ = new BehaviorSubject<Currency>('USD');
+  currency$ = new BehaviorSubject<CurrencyInfo>({currency: 'USD', changeRate: 1});
 
-  changesRates = {
-    'USD' : 1.0,
-    'GBP': 1.4,
-    'EUR': 1.2
-  };
+  rates: Rates;
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    http.get<Rates>('http://localhost:8000/rates')
+      .subscribe(rates => this.rates = rates);
+  }
 
-  getCurrency(): Observable<Currency> {
+  getCurrency(): Observable<CurrencyInfo> {
+    console.log('getCurrency');
     return this.currency$.asObservable();
   }
 
-  setCurrency(curr: Currency): void {
-    this.currency$.next(curr);
-  }
-
-  getChangeRate(): number {
-    return this.changesRates[this.currency$.getValue()];
+  setCurrency(curr: Currency) {
+    const currencyInfo = {currency: curr, changeRate: this.rates[curr]};
+    this.currency$.next(currencyInfo);
   }
 }

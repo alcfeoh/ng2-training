@@ -1,7 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {LicensePlate} from '../license-plate';
-import {CurrencyService} from '../currency.service';
-import {Observable} from 'rxjs/index';
+import {CurrencyInfo, CurrencyService} from '../currency.service';
 import {Currency} from '../currency-switcher/currency';
 
 @Component({
@@ -11,15 +10,21 @@ import {Currency} from '../currency-switcher/currency';
 })
 export class LicensePlateComponent {
 
-  currency$: Observable<Currency>;
-
   @Input()
   plate: LicensePlate;
 
   @Input()
   buttonText: string;
 
-  constructor(private currencyService: CurrencyService) {
-    this.currency$ = currencyService.getCurrency();
+  currencyInfo: CurrencyInfo;
+
+  constructor(public currencyService: CurrencyService) {
+    currencyService.getCurrency().subscribe(curr => this.currencyInfo = curr);
+
+  }
+
+
+  buttonClicked() {
+    alert('Plate added to cart');
   }
 }

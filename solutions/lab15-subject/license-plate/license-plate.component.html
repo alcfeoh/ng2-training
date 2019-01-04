@@ -1,11 +1,12 @@
 <h2>{{plate.title | uppercase}}
-  <img *ngIf="plate.onSale" class="sale" src="assets/sale.png"/>
+  <img *ngIf="plate.onSale" src="assets/sale.png" class="sale">
 </h2>
 <img [src]="plate.picture" class="img-fluid" >
 <p>{{plate.description}}</p>
 <div>
-  <h2 class="float-left">{{plate.price | currencyRenderer: (currency$ | async): currencyService.getChangeRate()}}</h2>
-  <button appHighlight="red" class="btn btn-primary float-right" role="button">
+  <h2 class="float-left">{{plate.price | currencyRenderer:currencyInfo.currency:currencyInfo.changeRate}}</h2>
+  <button appHighlight class="btn btn-primary float-right" role="button"
+      (click)="buttonClicked()">
     {{buttonText}}
   </button>
 </div>

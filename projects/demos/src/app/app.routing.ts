@@ -16,6 +16,7 @@ import {NgSwitchComponent} from './ngswitch/ng-switch.component';
 import {SubjectExampleComponent} from './subject-example/subject-example.component';
 import {PromiseExampleComponent} from './promise-example/promise-example.component';
 import {WrapperComponent} from './spinner/wrapper.component';
+import {StateFilterComponent} from './state-filter/state-filter.component';
 
 const appRoutes: Routes = [
   {
@@ -48,6 +49,8 @@ const appRoutes: Routes = [
     path: 'ngswitch', component: NgSwitchComponent
   }, {
     path: 'spinner', component: WrapperComponent
+  }, {
+    path: 'state-filter', component: StateFilterComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

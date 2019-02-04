@@ -25,6 +25,7 @@ import {SubjectExampleComponent} from './subject-example/subject-example.compone
 import {SpinnerComponent} from './spinner/spinner.component';
 import { WrapperComponent } from './spinner/wrapper.component';
 import {MessageComponent} from './two-way-data-binding-example/message.component';
+import { StateFilterComponent } from './state-filter/state-filter.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import {MessageComponent} from './two-way-data-binding-example/message.component
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent
   ],
   imports: [
     BrowserModule,

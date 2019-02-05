@@ -6,9 +6,9 @@ import { Component} from '@angular/core';
 })
 export class BindingsComponent {
 
-  name : string = "A Test";
+  name: string = "A Test";
 
-  alertName() : void {
+  alertName(): void {
     alert(`${this.name} was clicked`);
   }
 

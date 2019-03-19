@@ -17,6 +17,7 @@ import {SubjectExampleComponent} from './subject-example/subject-example.compone
 import {PromiseExampleComponent} from './promise-example/promise-example.component';
 import {WrapperComponent} from './spinner/wrapper.component';
 import {StateFilterComponent} from './state-filter/state-filter.component';
+import {DragDropComponent} from './drag-drop/drag-drop.component';
 
 const appRoutes: Routes = [
   {
@@ -51,6 +52,8 @@ const appRoutes: Routes = [
     path: 'spinner', component: WrapperComponent
   }, {
     path: 'state-filter', component: StateFilterComponent
+  }, {
+    path: 'drag-drop', component: DragDropComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

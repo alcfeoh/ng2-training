@@ -1,0 +1,8 @@
+<h2>A rectangle to drag anywhere:</h2>
+<div class="example-box" cdkDrag>
+  Drag me around
+</div>
+<h2>A list that can be reordered:</h2>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box-2" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+</div>

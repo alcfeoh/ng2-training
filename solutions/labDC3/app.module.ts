@@ -23,7 +23,7 @@ import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.c
 import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
-import {HighlightDirective} from '../../solutions/lab8/highlight.directive';
+import {HighlightDirective} from './highlight.directive';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({

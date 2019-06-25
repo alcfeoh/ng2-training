@@ -28,6 +28,8 @@ import {MessageComponent} from './two-way-data-binding-example/message.component
 import { StateFilterComponent } from './state-filter/state-filter.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { LabsMenuComponent } from './labs/labs-menu/labs-menu.component';
+import { LabA0Component } from './labs/lab-a0/lab-a0.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,7 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, DragDropComponent
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, DragDropComponent, LabsMenuComponent, LabA0Component
   ],
   imports: [
     BrowserModule,

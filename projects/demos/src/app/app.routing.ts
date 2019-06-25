@@ -18,6 +18,8 @@ import {PromiseExampleComponent} from './promise-example/promise-example.compone
 import {WrapperComponent} from './spinner/wrapper.component';
 import {StateFilterComponent} from './state-filter/state-filter.component';
 import {DragDropComponent} from './drag-drop/drag-drop.component';
+import {LabsMenuComponent} from './labs/labs-menu/labs-menu.component';
+import {LabA0Component} from './labs/lab-a0/lab-a0.component';
 
 const appRoutes: Routes = [
   {
@@ -54,6 +56,10 @@ const appRoutes: Routes = [
     path: 'state-filter', component: StateFilterComponent
   }, {
     path: 'drag-drop', component: DragDropComponent
+  }, {
+    path: 'labs', component: LabsMenuComponent
+  }, {
+    path: 'labs/A0', component: LabA0Component
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

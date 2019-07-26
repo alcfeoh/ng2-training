@@ -20,7 +20,7 @@ export class CurrencyService {
   rates: any;
 
   constructor(private http: HttpClient) {
-    http.get('http://localhost:8000/rates')
+    http.get('http://interstate21.com/demos/angular/rates.php')
       .subscribe(rates => this.rates = rates);
   }
 

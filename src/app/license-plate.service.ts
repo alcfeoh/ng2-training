@@ -12,7 +12,7 @@ export class LicensePlateService {
   constructor(private http: HttpClient) { }
 
   getList(): Observable<LicensePlate[]> {
-     return this.http.get<LicensePlate[]>('http://localhost:8000/data')
+     return this.http.get<LicensePlate[]>('http://interstate21.com/demos/angular/plates.php')
        .pipe(
          tap(data => console.log('I can play with that data here if I want to'))
        );

@@ -1,7 +1,7 @@
 import {Directive, HostBinding, HostListener, Input} from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight],button:not([noHighlight])'
+  selector: '[appHighlight]'
 })
 export class HighlightDirective {
 

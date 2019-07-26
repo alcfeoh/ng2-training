@@ -6,7 +6,7 @@
   <!-- Example row of columns -->
   <div class="row" >
 
-    <app-license-plate *ngFor="let plate of cartContents" [plate]="plate"
+    <app-license-plate *ngFor="let plate of cartContents" [plate]="plate" (btnClicked)="removeFromCart(plate)"
                         buttonText="Remove from cart &times;" [currency]="currencyService.currency$ | async"
                        class="col-md-4" style="margin-top: 40px">
 

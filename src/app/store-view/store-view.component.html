@@ -1,0 +1,21 @@
+<!-- Insert jumbotron component here -->
+<app-jumbotron
+  title="Welcome to our store"
+  description="Browse our collection">
+
+</app-jumbotron>
+
+<div class="container">
+  <div class="row" >
+    <!-- License plates go here -->
+    <app-license-plate *ngFor="let plate of licensePlates$ | async; even as isEven"
+                       [plate]="plate" appHighlight="#f5f5f5" [currency]="currencyService.currency$ | async"
+                       (btnClicked)="addToCart($event)" buttonText="Add to cart" class="col-md-4">
+
+    </app-license-plate>
+  </div>
+
+  <app-popup-window [isOpen]="addToCartSuccessful" title="Plate added to cart">
+    Thanks for shopping with us
+  </app-popup-window>
+</div>

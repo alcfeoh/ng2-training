@@ -22,6 +22,15 @@ import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
 import {TokenInterceptorService} from './token-http-interceptor.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { HighlightDirective } from './highlight.directive';
+import { CurrencyRendererPipe } from './currency-renderer.pipe';
+import {CartViewComponent} from './cart-view/cart-view.component';
+import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
+import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
+import { StoreViewComponent } from './store-view/store-view.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -31,8 +40,8 @@ import {TokenInterceptorService} from './token-http-interceptor.service';
     JasmineTestComponent,
     LoginComponent,
     PopupWindowComponent, LoaderComponent, HeaderComponent,
-    LoaderViewChildComponent,
-    CarouselComponent, CurrencySwitcherComponent
+    LoaderViewChildComponent, CartViewComponent, CheckoutViewComponent, CheckoutFormComponent,
+    CarouselComponent, CurrencySwitcherComponent, DashboardComponent, NavigationComponent, JumbotronComponent, HighlightDirective, CurrencyRendererPipe, StoreViewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
+import {PopupWindowComponent} from '../popup-window.component';
 
 @Component({
   selector: 'app-loader',

@@ -1,15 +1,10 @@
 <!-- Insert navigation component here -->
+<app-navigation></app-navigation>
 
 <main role="main">
-  <!-- Insert jumbotron component here -->
-
-  <div class="container">
-    <div class="row" >
-      <!-- License plates go here -->
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </main>
 
 <footer class="container">
-  <p>&copy; License Plate Store 2018</p>
+  <p>&copy; License Plate Store {{now | date:'yyyy'}}</p>
 </footer>

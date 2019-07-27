@@ -13,7 +13,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   login(username, password): Observable<string> {
-    return this.http.put('http://localhost:8000/login', {username, password})
+    return this.http.put('http://interstate21.com/demos/angular/login.php', {username, password})
       .pipe(
         tap(data => {
           this.currentUser = username;

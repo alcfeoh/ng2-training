@@ -17,12 +17,12 @@ export class CheckoutFormComponent {
   states$: Observable<State[]>;
 
   constructor(private http: HttpClient) {
-    this.states$ = http.get<State[]>('http://localhost:8000/states');
+    this.states$ = http.get<State[]>('http://interstate21.com/demos/angular/states.php');
   }
 
   logForm(value) {
     console.log(value);
-    this.http.post('http://localhost:8000/checkout', value)
+    this.http.post('http://interstate21.com/demos/angular/checkout.php', value)
       .subscribe(success => alert('Order successful'));
   }
 }

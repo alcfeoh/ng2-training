@@ -11,7 +11,7 @@ export class CurrencySwitcherComponent {
 
   showItems = false;
 
-  constructor(private service: CurrencyService) { }
+  constructor(public service: CurrencyService) { }
 
   changeCurrency(currency: Currency) {
     this.service.setCurrency(currency);

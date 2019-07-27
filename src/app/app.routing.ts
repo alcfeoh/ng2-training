@@ -14,7 +14,7 @@ const appRoutes: Routes = [
   }, {
     path: 'cart', component: CartViewComponent
   }, {
-    path: 'checkout', component: CheckoutViewComponent, canActivate: [AuthGuard]
+    path: 'checkout', component: CheckoutViewComponent
   }, {
     path: 'login', component: LoginComponent
   }

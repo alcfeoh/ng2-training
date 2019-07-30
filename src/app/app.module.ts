@@ -22,7 +22,9 @@ import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
 import {TokenInterceptorService} from './token-http-interceptor.service';
-//import { ReactiveFormsModule } from '@angular/forms';
+import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
+import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
+import {CartViewComponent} from './cart-view/cart-view.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import {TokenInterceptorService} from './token-http-interceptor.service';
     LoginComponent,
     PopupWindowComponent, LoaderComponent, HeaderComponent,
     LoaderViewChildComponent,
-    CarouselComponent, CurrencySwitcherComponent
+    CarouselComponent, CurrencySwitcherComponent,
+    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,6 @@ import {TokenInterceptorService} from './token-http-interceptor.service';
     FormsModule,
     HttpClientModule,
     RouterModule , routing
-    //,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, CartService,  {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
   bootstrap: [AppComponent]

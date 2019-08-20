@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {LicensePlate} from '../license-plate';
+import {CurrencyService} from '../currency.service';
 
 @Component({
   selector: 'app-license-plate',

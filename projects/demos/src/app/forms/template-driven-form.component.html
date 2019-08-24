@@ -18,7 +18,7 @@
   <input type="text" name="street" ngModel>
   <br/>
   <label>Zip:</label>
-  <div class="alert" *ngIf="zip.invalid">Please enter a 5-digit zipcode</div>
+  <div class="alert" *ngIf="zip.invalid && zip.dirty">Please enter a 5-digit zipcode</div>
   <input type="text" name="zip" ngModel required pattern="[0-9]{5}"
       #zip="ngModel"
   >
@@ -27,7 +27,7 @@
   <input type="text" name="city" ngModel>
   <br/>
   <label>Credit card:</label>
-  <div class="alert" *ngIf="cc.invalid">Please enter a 5-digit zipcode</div>
+  <div class="alert" *ngIf="cc.invalid">Please enter a valid credit card number</div>
   <input type="password" name="cc" #cc="ngModel" ngModel appCreditCardValidator>
   <br/>
   <button type="submit">Submit</button>

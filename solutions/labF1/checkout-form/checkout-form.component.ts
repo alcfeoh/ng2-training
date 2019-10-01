@@ -18,7 +18,7 @@ export class CheckoutFormComponent {
   }
 
   logForm(value) {
-    console.log(value);	    console.log(value);
+    console.log(value);
     this.http.put('http://localhost:8000/checkout', value).subscribe(success => this.showPopup = true);
   }
 

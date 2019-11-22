@@ -30,6 +30,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { LabsMenuComponent } from './labs/labs-menu/labs-menu.component';
 import { LabA0Component } from './labs/lab-a0/lab-a0.component';
+import { LabC1Component } from './labs/lab-c1/lab-c1.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { LabA0Component } from './labs/lab-a0/lab-a0.component';
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, DragDropComponent, LabsMenuComponent, LabA0Component
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, DragDropComponent, LabsMenuComponent, LabA0Component, LabC1Component
   ],
   imports: [
     BrowserModule,

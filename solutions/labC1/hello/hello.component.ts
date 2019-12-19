@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hello',
+  selector: 'app-hello',
   template: `
     <div>
       <h2>Hello {{firstName}} {{name}}</h2>
@@ -16,5 +16,4 @@ export class HelloComponent {
   constructor() {
     this.name = 'Angular';
   }
-
 }

@@ -20,6 +20,7 @@ import {StateFilterComponent} from './state-filter/state-filter.component';
 import {DragDropComponent} from './drag-drop/drag-drop.component';
 import {LabsMenuComponent} from './labs/labs-menu/labs-menu.component';
 import {LabA0Component} from './labs/lab-a0/lab-a0.component';
+import {LabC1Component} from './labs/lab-c1/lab-c1.component';
 
 const appRoutes: Routes = [
   {
@@ -60,6 +61,8 @@ const appRoutes: Routes = [
     path: 'labs', component: LabsMenuComponent
   }, {
     path: 'labs/A0', component: LabA0Component
+  }, {
+    path: 'labs/C1', component: LabC1Component
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

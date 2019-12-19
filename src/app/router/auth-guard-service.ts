@@ -8,9 +8,9 @@ export class AuthGuard implements CanActivate {
   constructor() {
   }
 
-  canActivate(): Observable<boolean> {
+  canActivate(): boolean {
     console.log('AuthGuard#canActivate called');
-    return of(true);
+    return true;
   }
 
 }

@@ -6,7 +6,6 @@ import {RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { routing } from './app.routing';
-import { JasmineTestComponent } from './jasmine-test/jasmine-test.component';
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
@@ -25,17 +24,17 @@ import {TokenInterceptorService} from './token-http-interceptor.service';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {CartViewComponent} from './cart-view/cart-view.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
     EvenUppercasePipe,
-    JasmineTestComponent,
     LoginComponent,
     PopupWindowComponent, LoaderComponent, HeaderComponent,
     LoaderViewChildComponent,
     CarouselComponent, CurrencySwitcherComponent,
-    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent
+    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
   ],
   imports: [
     BrowserModule,

@@ -13,8 +13,6 @@
     "e2e": "ng e2e",
     "server": "node node_modules/lp-store-server/solutions/index.js",
     "cleanup": "git clean -fd && git reset --hard",
-    "solution": "node solutions/copyutil.js",
-    "all-solutions": "node solutions/copyutil.js labC1 && node solutions/copyutil.js labC2 && node solutions/copyutil.js labDB1 && node solutions/copyutil.js labDC1 && node solutions/copyutil.js labDC2 && node solutions/copyutil.js labDC3 && node solutions/copyutil.js labP1 && node solutions/copyutil.js labP2 && node solutions/copyutil.js labS1 && node solutions/copyutil.js labRX1 && node solutions/copyutil.js labHT1 && node solutions/copyutil.js labHT2 && node solutions/copyutil.js labCC1 && node solutions/copyutil.js labCC2 && node solutions/copyutil.js labR1 && node solutions/copyutil.js labR2 && node solutions/copyutil.js lab18 && node solutions/copyutil.js labF1 && node solutions/copyutil.js labT1 && node solutions/copyutil.js labT2",
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json"
   },
   "private": true,

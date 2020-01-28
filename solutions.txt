@@ -4,10 +4,7 @@ No solution - just run the commands in a terminal
 ---------------------------------------------------------------------------------------------------
 LAB C1 and further:
 
-Run the following command:
- npm run solution labC1
-
- This will copy-paste the solution for that lab from the "solutions" repository into the "app" folder
+ You can find all solutions at: https://github.com/alcfeoh/ng2-training-solutions
  --------------------------------------------------------------------------------------------------
 
- You can find all solutions at: https://github.com/alcfeoh/ng2-training-solutions
+

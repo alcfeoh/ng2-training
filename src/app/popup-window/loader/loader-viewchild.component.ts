@@ -7,7 +7,7 @@ import {PopupWindowComponent} from "../popup-window.component";
 })
 export class LoaderViewChildComponent {
 
-  @ViewChild(PopupWindowComponent, {static: false})
+  @ViewChild(PopupWindowComponent)
   popup: PopupWindowComponent;
 
   showPopup() {

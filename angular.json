@@ -11,6 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,6 +29,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -149,7 +156,8 @@
           "configurations": {
             "production": {
               "project": "projects/enum-utils/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/enum-utils/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -184,6 +192,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/demos",
             "index": "projects/demos/src/index.html",
             "main": "projects/demos/src/main.ts",
@@ -201,6 +210,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/demos/src/environments/environment.ts",
@@ -305,6 +320,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/elements",
             "index": "projects/elements/src/index.html",
             "main": "projects/elements/src/main.ts",
@@ -343,6 +359,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }

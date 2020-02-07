@@ -8,4 +8,4 @@ const appRoutes: Routes = [
     path: '', component: HelloComponent
   }
 ];
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot(appRoutes);

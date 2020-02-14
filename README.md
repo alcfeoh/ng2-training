@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/alcfeoh/ng2-training.png)](https://travis-ci.org/alcfeoh/ng2-training)
 
-This project is updated for Angular 8 with Angular CLI 8.
+This project is updated for Angular 9 with Angular CLI 9.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -10,8 +10,7 @@ Run `ng serve demos` to start the demos app. Navigate to `http://localhost:4201/
 
 ## Solutions for all labs
 
-In order to get the solution for labs 2 and after, just run: `npm run solution lab2`  
-This will copy-paste the solution for that lab from the "solutions" folder into the "app" folder
+In order to get the solution for the code labs, visit: `https://github.com/alcfeoh/ng2-training-solutions`  
 
 ## Code scaffolding
 

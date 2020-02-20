@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 export class ModelComponent {
 
-  public person = {firstName: 'Alain', name: 'Chautard'};
+  accepted = false;
+
+  person = {firstName: 'Alain', name: 'Chautard'};
 
 }

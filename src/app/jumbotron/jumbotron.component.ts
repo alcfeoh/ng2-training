@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-jumbotron',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jumbotron.component.css']
 })
 export class JumbotronComponent implements OnInit {
+
+  @Input()
+  title;
+  @Input()
+  description;
 
   constructor() { }
 

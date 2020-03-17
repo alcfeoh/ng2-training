@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {LicensePlate} from './license-plate';
-import {CALIFORNIA_PLATE, LICENSE_PLATES} from "./mock-data";
+import {LicensePlateService} from "./license-plate.service";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,9 @@ export class AppComponent {
 
   now = new Date();
 
-  licensePlates: LicensePlate[] = LICENSE_PLATES;
-  licensePlate: LicensePlate = CALIFORNIA_PLATE;
+  licensePlates: LicensePlate[] ;
 
-
+  constructor(service: LicensePlateService) {
+       service.getList().subscribe(data => this.licensePlates = data);
+  }
 }

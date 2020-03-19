@@ -1,12 +1,12 @@
 <app-navigation></app-navigation>
 
 <main role="main">
-  <app-jumbotron title="Welcome to our store" description="Browse our collection of plates"></app-jumbotron>
+  <app-jumbotron title="Welcome to our store" description="Browse our collection of license plates"></app-jumbotron>
 
   <div class="container">
     <div class="row" >
-      <app-license-plate *ngFor="let plate of licensePlates; even as e" [plate]="plate" buttonText="Add to cart"
-                         class="col-md-4" [style.backgroundColor]="e ? '#F5F5F5' : ''">
+      <app-license-plate *ngFor="let myPlate of licensePlates; even as isEven" [plate]="myPlate" buttonText="Add to cart"
+                         class="col-md-4" [style.backgroundColor]="isEven ? '#F5F5F5' : ''">
 
       </app-license-plate>
     </div>
@@ -14,5 +14,5 @@
 </main>
 
 <footer class="container">
-  <p>&copy; License Plate Store {{now | date: 'yyyy'}}</p>
+  <p>&copy; License Plate Store 2018</p>
 </footer>

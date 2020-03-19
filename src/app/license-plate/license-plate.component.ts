@@ -14,5 +14,7 @@ export class LicensePlateComponent {
   @Input()
   buttonText: string;
 
-  constructor() { }
+  buttonClicked() {
+    alert("Plate added to cart");
+  }
 }

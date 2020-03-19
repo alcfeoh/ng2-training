@@ -11,7 +11,7 @@
     "test": "ng run ng-training:test-ci",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "node node_modules/lp-store-server/solutions/index.js",
+    "server": "node node_modules/lp-store-server/index.js",
     "cleanup": "git clean -fd && git reset --hard",
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json"
   },
@@ -28,7 +28,7 @@
     "bootstrap": "^4.3.1",
     "core-js": "^2.6.9",
     "document-register-element": "1.8.1",
-    "lp-store-server": "^2.1.1",
+    "lp-store-server": "^2.2.0",
     "rxjs": "6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

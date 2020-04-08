@@ -40,7 +40,7 @@ import { LabC1Component } from './labs/lab-c1/lab-c1.component';
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, DragDropComponent, LabsMenuComponent, LabA0Component, LabC1Component
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, LabsMenuComponent, LabA0Component, LabC1Component
   ],
   imports: [
     BrowserModule,

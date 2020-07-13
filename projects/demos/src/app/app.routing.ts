@@ -62,4 +62,4 @@ const appRoutes: Routes = [
     path: 'labs/C1', component: LabC1Component
   }
 ];
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot(appRoutes);

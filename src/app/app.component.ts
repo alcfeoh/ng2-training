@@ -4,9 +4,7 @@ import {CALIFORNIA_PLATE, LICENSE_PLATES} from "./mock-data";
 
 @Component({
   selector: 'app-root',
-  template: `
-      <app-hello></app-hello>
-  `
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
 

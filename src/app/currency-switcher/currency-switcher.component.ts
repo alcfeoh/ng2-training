@@ -14,5 +14,6 @@ export class CurrencySwitcherComponent {
 
   changeCurrency(currency: Currency) {
     // TODO
+    this.showItems = false;
   }
 }

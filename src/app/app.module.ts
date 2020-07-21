@@ -25,6 +25,9 @@ import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {CartViewComponent} from './cart-view/cart-view.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ServiceComponent } from './service/service.component';
+import { CurrencyRendererPipe } from './currency-renderer.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     PopupWindowComponent, LoaderComponent, HeaderComponent,
     LoaderViewChildComponent,
     CarouselComponent, CurrencySwitcherComponent,
-    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
+    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent, NavigationComponent, ServiceComponent, CurrencyRendererPipe
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,9 @@ import {Post} from './post';
 import {Observable} from 'rxjs';
 import {webSocket, WebSocketSubject} from 'rxjs/webSocket';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class PostsService {
 
   // We use a websocket to receive a stream of data from the server

@@ -26,9 +26,6 @@ import {SpinnerComponent} from './spinner/spinner.component';
 import { WrapperComponent } from './spinner/wrapper.component';
 import {MessageComponent} from './two-way-data-binding-example/message.component';
 import { StateFilterComponent } from './state-filter/state-filter.component';
-import { LabsMenuComponent } from './labs/labs-menu/labs-menu.component';
-import { LabA0Component } from './labs/lab-a0/lab-a0.component';
-import { LabC1Component } from './labs/lab-c1/lab-c1.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +37,7 @@ import { LabC1Component } from './labs/lab-c1/lab-c1.component';
     TemplateDrivenFormComponent, ReactiveFormComponent, CreditCardValidatorDirective,
     HidingComponent, ModelComponent,
     NgforComponent, NgClassComponent, NgSwitchComponent,
-    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent, LabsMenuComponent, LabA0Component, LabC1Component
+    PromiseExampleComponent, SubjectExampleComponent, SpinnerComponent, WrapperComponent, StateFilterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +45,6 @@ import { LabC1Component } from './labs/lab-c1/lab-c1.component';
     FormsModule, ReactiveFormsModule,
     RouterModule, routing
   ],
-  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

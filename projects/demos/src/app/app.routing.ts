@@ -17,9 +17,6 @@ import {SubjectExampleComponent} from './subject-example/subject-example.compone
 import {PromiseExampleComponent} from './promise-example/promise-example.component';
 import {WrapperComponent} from './spinner/wrapper.component';
 import {StateFilterComponent} from './state-filter/state-filter.component';
-import {LabsMenuComponent} from './labs/labs-menu/labs-menu.component';
-import {LabA0Component} from './labs/lab-a0/lab-a0.component';
-import {LabC1Component} from './labs/lab-c1/lab-c1.component';
 
 const appRoutes: Routes = [
   {
@@ -54,12 +51,6 @@ const appRoutes: Routes = [
     path: 'spinner', component: WrapperComponent
   }, {
     path: 'state-filter', component: StateFilterComponent
-  }, {
-    path: 'labs', component: LabsMenuComponent
-  }, {
-    path: 'labs/A0', component: LabA0Component
-  }, {
-    path: 'labs/C1', component: LabC1Component
   }
 ];
 export const routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot(appRoutes);

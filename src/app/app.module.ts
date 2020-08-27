@@ -28,6 +28,7 @@ import { StoreViewComponent } from './store-view/store-view.component';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {CartViewComponent} from './cart-view/cart-view.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -47,7 +48,7 @@ import {CartViewComponent} from './cart-view/cart-view.component';
     EnumUtilsModule,
     FormsModule,
     HttpClientModule,
-    RouterModule , routing
+    RouterModule , routing, ScullyLibModule
     //,ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, CartService],

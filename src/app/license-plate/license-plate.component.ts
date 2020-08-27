@@ -14,5 +14,10 @@ export class LicensePlateComponent {
   @Input()
   buttonText: string;
 
-  constructor() { }
+  @Output()
+  buttonClick = new EventEmitter<LicensePlate>();
+
+  buttonClicked() {
+    this.buttonClick.emit(this.plate);
+  }
 }

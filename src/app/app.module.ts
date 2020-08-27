@@ -9,7 +9,7 @@ import { routing } from './app.routing';
 import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
 import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,11 +20,15 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
-import {TokenInterceptorService} from './token-http-interceptor.service';
+import { NavigationComponent } from './navigation/navigation.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import {HighlightDirective} from './highlight.directive';
+import { CurrencyRendererPipe } from './currency-renderer.pipe';
+import { StoreViewComponent } from './store-view/store-view.component';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {CartViewComponent} from './cart-view/cart-view.component';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
+//import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,8 +37,10 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     LoginComponent,
     PopupWindowComponent, LoaderComponent, HeaderComponent,
     LoaderViewChildComponent,
-    CarouselComponent, CurrencySwitcherComponent,
-    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
+    CarouselComponent, CurrencySwitcherComponent, NavigationComponent, JumbotronComponent,
+    HighlightDirective,
+    CurrencyRendererPipe,
+    StoreViewComponent, CheckoutFormComponent, CheckoutViewComponent, CartViewComponent
   ],
   imports: [
     BrowserModule,
@@ -42,8 +48,9 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     FormsModule,
     HttpClientModule,
     RouterModule , routing
+    //,ReactiveFormsModule
   ],
-  providers: [AuthGuard, LoginService, CartService,  {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
+  providers: [AuthGuard, LoginService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

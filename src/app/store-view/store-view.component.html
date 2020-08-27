@@ -1,0 +1,15 @@
+<app-jumbotron title="Welcome to our store" description="Browse our collection of license plates"></app-jumbotron>
+
+<div class="container">
+  <div class="row" >
+    <app-license-plate [plate]="plate" *ngFor="let plate of licensePlates$ | async"
+                       buttonText="Add to cart" class="col-md-4" appHighlight
+                       (buttonClick)="addToCart($event)" >
+    </app-license-plate>
+  </div>
+</div>
+
+<app-popup-window [isOpen]="showPopup" title="Item added to cart" (onClose)="showPopup = false" >
+  Thanks for shopping with us!
+</app-popup-window>
+

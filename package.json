@@ -27,6 +27,7 @@
     "@angular/router": "^10.0.11",
     "bootstrap": "^4.5.2",
     "core-js": "^2.6.11",
+    "cypress": "^5.2.0",
     "document-register-element": "1.8.1",
     "lp-store-server": "^2.3.0",
     "rxjs": "6.5.4",

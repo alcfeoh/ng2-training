@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {LicensePlate} from '../license-plate';
+import {CurrencyService} from '../currency.service';
 
 @Component({
   selector: 'app-license-plate',
@@ -16,6 +17,11 @@ export class LicensePlateComponent {
 
   @Output()
   buttonClick = new EventEmitter<LicensePlate>();
+
+  constructor(public service: CurrencyService) {
+
+  }
+
 
   buttonClicked() {
     this.buttonClick.emit(this.plate);

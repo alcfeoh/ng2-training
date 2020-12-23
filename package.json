@@ -41,6 +41,7 @@
     "@types/jasmine": "2.5.38",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.19.3",
+    "codelyzer": "^6.0.0",
     "concat": "^1.0.3",
     "copyfiles": "^2.4.0",
     "fs-extra": "^7.0.1",

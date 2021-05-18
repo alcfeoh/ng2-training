@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-   - "12.4"
+   - "14.17"
 
 install:
   - npm install -g @angular/cli

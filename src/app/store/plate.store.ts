@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class LicensePlateStore extends Store<LicensePlate[]> {
 
-  constructor (private http: HttpClient) {
+  constructor(private http: HttpClient) {
     super([]);
     this.refresh();
   }

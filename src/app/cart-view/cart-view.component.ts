@@ -15,7 +15,7 @@ export class CartViewComponent {
     service.getCartContents().subscribe(data => this.cartContents = data);
   }
 
-  removeFromCart(plate: LicensePlate) {
+  removeFromCart(plate: LicensePlate): void {
     // TODO
   }
 

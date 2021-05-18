@@ -9,7 +9,7 @@ export class CheckoutFormComponent {
 
   constructor() { }
 
-  logForm(value) {
+  logForm(value): void {
     console.log(value);
   }
 }

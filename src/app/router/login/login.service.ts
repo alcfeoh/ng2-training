@@ -24,15 +24,15 @@ export class LoginService {
       );
   }
 
-  isUserLoggedIn() {
+  isUserLoggedIn(): boolean {
     return this.isLoggedIn;
   }
 
-  getCurrentUser() {
+  getCurrentUser(): string {
     return this.currentUser;
   }
 
-  getAuthToken() {
+  getAuthToken(): string {
     return this.authToken;
   }
 }

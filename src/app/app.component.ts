@@ -13,5 +13,4 @@ export class AppComponent {
   licensePlates: LicensePlate[] = LICENSE_PLATES;
   licensePlate: LicensePlate = CALIFORNIA_PLATE;
 
-
 }

@@ -12,7 +12,7 @@ export class CurrencySwitcherComponent {
 
   constructor() { }
 
-  changeCurrency(currency: Currency) {
+  changeCurrency(currency: Currency): void {
     // TODO
   }
 }

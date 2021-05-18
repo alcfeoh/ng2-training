@@ -14,7 +14,6 @@ import { PopupWindowComponent } from './popup-window/popup-window.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
 import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.component";
-import {EvenUppercasePipe} from "./pipe-solution/even-uppercase.pipe";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
@@ -29,11 +28,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
-    EvenUppercasePipe,
-    LoginComponent,
-    PopupWindowComponent, LoaderComponent, HeaderComponent,
-    LoaderViewChildComponent,
-    CarouselComponent, CurrencySwitcherComponent,
+    LoginComponent, PopupWindowComponent, LoaderComponent, HeaderComponent,
+    LoaderViewChildComponent, CarouselComponent, CurrencySwitcherComponent,
     CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
   ],
   imports: [

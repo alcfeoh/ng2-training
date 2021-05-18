@@ -5,6 +5,7 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+  "experimentalDecorators": true,
   "files": [],
   "references": [
     {

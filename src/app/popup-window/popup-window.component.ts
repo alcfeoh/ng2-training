@@ -16,11 +16,11 @@ export class PopupWindowComponent implements OnInit {
   @Output()
   onClose = new EventEmitter<string>();
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log('NG ON INIT');
   }
 
-  closePopup() {
+  closePopup(): void {
     this.isOpen = false;
     this.onClose.emit('Pop-up window closed');
   }

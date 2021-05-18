@@ -10,9 +10,9 @@ export class LoginComponent {
 
   constructor(private loginService: LoginService) { }
 
-  login(username, password) {
+  login(username: string, password: string): void {
     this.loginService.login(username, password)
-      .subscribe(token => console.log('Succesfully logged in'));
+      .subscribe(token => console.log('Successfully logged in'));
   }
 
 }

@@ -3,7 +3,9 @@ import {Observable} from 'rxjs';
 import {LicensePlate} from './license-plate';
 import {HttpClient} from '@angular/common/http';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class CartService {
 
   constructor(private http: HttpClient) { }
@@ -17,7 +19,7 @@ export class CartService {
   }
 
   removeFromCart(plate: LicensePlate): Observable<any> {
-    return this.http.delete('http://localhost:8000/cart/' + plate._id, null);
+    return this.http.delete('http://localhost:8000/cart/' + plate._id);
   }
 
 }

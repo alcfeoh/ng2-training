@@ -10,7 +10,7 @@ export class LoaderComponent {
 
   constructor() { }
 
-  popupClosed(event) {
+  popupClosed(event): void {
     console.log(event);
     this.showPopup = false;
   }

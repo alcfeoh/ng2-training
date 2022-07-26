@@ -10,7 +10,7 @@ import {AuthGuard} from "./router/auth-guard-service";
 import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import { PopupWindowComponent } from './popup-window/popup-window.component';
+import { DialogComponent } from './popup-window/dialog.component';
 import { LoaderComponent } from './popup-window/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
 import {LoaderViewChildComponent} from "./popup-window/loader/loader-viewchild.component";
@@ -28,7 +28,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
-    LoginComponent, PopupWindowComponent, LoaderComponent, HeaderComponent,
+    LoginComponent, DialogComponent, LoaderComponent, HeaderComponent,
     LoaderViewChildComponent, CarouselComponent, CurrencySwitcherComponent,
     CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
   ],

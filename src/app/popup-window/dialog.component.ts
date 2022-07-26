@@ -1,11 +1,11 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-popup-window',
-  templateUrl: './popup-window.component.html',
-  styleUrls: ['./popup-window.component.css']
+  selector: 'app-dialog',
+  templateUrl: './dialog.component.html',
+  styleUrls: ['./dialog.component.css']
 })
-export class PopupWindowComponent implements OnInit {
+export class DialogComponent implements OnInit {
 
   @Input()
   isOpen = false;

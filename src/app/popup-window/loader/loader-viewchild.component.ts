@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {PopupWindowComponent} from "../popup-window.component";
+import {DialogComponent} from "../dialog.component";
 
 @Component({
   selector: 'app-loader-vc',
@@ -7,8 +7,8 @@ import {PopupWindowComponent} from "../popup-window.component";
 })
 export class LoaderViewChildComponent {
 
-  @ViewChild(PopupWindowComponent)
-  popup: PopupWindowComponent;
+  @ViewChild(DialogComponent)
+  popup: DialogComponent;
 
   showPopup(): void {
     this.popup.isOpen = true;

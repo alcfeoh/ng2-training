@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {LicensePlate} from '../license-plate';
 import {CartService} from '../cart.service';
 

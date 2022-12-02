@@ -11,14 +11,11 @@ import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DialogComponent } from './dialog/dialog.component';
-import { LoaderComponent } from './dialog/loader/loader.component';
 import { HeaderComponent } from './header/header.component';
-import {LoaderViewChildComponent} from "./dialog/loader/loader-viewchild.component";
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
-import {EnumUtilsModule} from '../../projects/enum-utils/src/lib/enum-utils.module';
 import {TokenInterceptorService} from './token-http-interceptor.service';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
@@ -28,13 +25,12 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
-    LoginComponent, DialogComponent, LoaderComponent, HeaderComponent,
-    LoaderViewChildComponent, CarouselComponent, CurrencySwitcherComponent,
+    LoginComponent, DialogComponent, HeaderComponent,
+    CarouselComponent, CurrencySwitcherComponent,
     CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
   ],
   imports: [
     BrowserModule,
-    EnumUtilsModule,
     FormsModule,
     HttpClientModule,
     RouterModule , routing

@@ -9,7 +9,7 @@ import {CartService} from '../cart.service';
 })
 export class CartViewComponent {
 
-  cartContents: LicensePlate[];
+  cartContents: LicensePlate[] = [];
 
   constructor(private service: CartService) {
     service.getCartContents().subscribe(data => this.cartContents = data);

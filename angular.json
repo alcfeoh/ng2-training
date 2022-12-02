@@ -139,9 +139,9 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/enum-utils/ng-package.prod.json"
-            ,              "tsConfig": "projects/enum-utils/tsconfig.lib.prod.json"
-}
+              "project": "projects/enum-utils/ng-package.prod.json",
+              "tsConfig": "projects/enum-utils/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -286,9 +286,11 @@
             "styles": [
               "projects/elements/src/styles.css"
             ],
-            "scripts": [{
-              "input": "node_modules/document-register-element/build/document-register-element.js"
-            }],
+            "scripts": [
+              {
+                "input": "node_modules/document-register-element/build/document-register-element.js"
+              }
+            ],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
@@ -389,6 +391,12 @@
     },
     "@schematics/angular:directive": {
       "prefix": "app"
+    },
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
     }
   }
 }

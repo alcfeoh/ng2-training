@@ -9,10 +9,10 @@ import {LicensePlate} from '../license-plate';
 export class LicensePlateComponent {
 
   @Input()
-  plate: LicensePlate;
+  plate!: LicensePlate;
 
   @Input()
-  buttonText: string;
+  buttonText!: string;
 
   constructor() { }
 }

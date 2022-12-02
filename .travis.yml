@@ -3,7 +3,7 @@ addons:
   chrome: stable
 
 node_js:
-   - "14.17"
+   - "18.12"
 
 install:
   - npm install -g @angular/cli

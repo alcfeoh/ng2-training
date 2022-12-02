@@ -58,7 +58,6 @@
     "nodejs-websocket": "^1.7.2",
     "protractor": "~7.0.0",
     "ts-node": "3.3.0",
-    "tslint": "^6.1.3",
     "typescript": "^4.8.0"
   }
 }

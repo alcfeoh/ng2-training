@@ -94,10 +94,11 @@
         "test-ci": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "karmaConfig": "./karma.ci.conf.js",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
             "scripts": [],
             "styles": [
               "src/styles.css",
@@ -204,7 +205,6 @@
             "main": "projects/demos/src/test.ts",
             "polyfills": "projects/demos/src/polyfills.ts",
             "tsConfig": "projects/demos/tsconfig.spec.json",
-            "karmaConfig": "projects/demos/karma.conf.js",
             "styles": [
               "projects/demos/src/styles.css"
             ],

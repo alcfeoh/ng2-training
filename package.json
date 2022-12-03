@@ -8,7 +8,7 @@
     "build": "ng build",
     "build-prod": "ng build --configuration=production",
     "build:elements": "ng build elements --configuration=production && node build-elements.js",
-    "test": "ng run ng-training:test-ci",
+    "test": "ng test --project ng-training --browsers ChromeHeadless --watch false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "node node_modules/lp-store-server/index.js",

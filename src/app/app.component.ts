@@ -4,13 +4,12 @@ import {CALIFORNIA_PLATE, LICENSE_PLATES} from "./mock-data";
 
 @Component({
   selector: 'app-root',
-  template: `
-      <app-hello></app-hello>
-  `
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
 
   licensePlates: LicensePlate[] = LICENSE_PLATES;
   licensePlate: LicensePlate = CALIFORNIA_PLATE;
 
+  protected readonly LICENSE_PLATES = LICENSE_PLATES;
 }

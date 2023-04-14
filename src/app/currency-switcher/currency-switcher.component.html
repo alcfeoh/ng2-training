@@ -3,8 +3,8 @@
     {{ 'USD' }}
   </button>
   <div class="dropdown-menu show" [class.show]="showItems">
-    <a class="dropdown-item" >USD ($)</a>
-    <a class="dropdown-item" >EUR (€)</a>
-    <a class="dropdown-item" >GBP (£)</a>
+    <a class="dropdown-item" (click)="changeCurrency('USD')" >USD ($)</a>
+    <a class="dropdown-item" (click)="changeCurrency('EUR')">EUR (€)</a>
+    <a class="dropdown-item" (click)="changeCurrency('GBP')">GBP (£)</a>
   </div>
 </div>

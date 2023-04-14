@@ -14,6 +14,7 @@ export class CurrencySwitcherComponent {
   constructor(protected currencyService: CurrencyService) { }
 
   changeCurrency(currency: Currency): void {
-    // TODO Update Currency using CurrencyService
+    this.currencyService.setCurrency(currency);
+    this.showItems = false;
   }
 }

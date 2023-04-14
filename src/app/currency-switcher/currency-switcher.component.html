@@ -1,6 +1,6 @@
 <div class="btn-group">
   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" (click)="showItems = ! showItems">
-    {{ 'USD' }}
+    {{ currencyService.currency() }}
   </button>
   <div class="dropdown-menu show" [class.show]="showItems">
     <a class="dropdown-item" (click)="changeCurrency('USD')" >USD ($)</a>

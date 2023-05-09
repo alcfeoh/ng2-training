@@ -344,7 +344,6 @@
       }
     }
   },
-  "defaultProject": "ng-training",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

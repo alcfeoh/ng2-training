@@ -6,8 +6,6 @@ import {RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { routing } from './app.routing';
-import {AuthGuard} from "./router/auth-guard-service";
-import {LoginService} from "./router/login/login.service";
 import {LoginComponent} from "./router/login/login.component";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DialogComponent } from './dialog/dialog.component';
@@ -35,7 +33,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     HttpClientModule,
     RouterModule , routing
   ],
-  providers: [AuthGuard, LoginService, CartService,  {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

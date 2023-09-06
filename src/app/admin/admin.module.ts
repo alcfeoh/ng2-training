@@ -11,5 +11,4 @@ import {routing} from "./admin.routing";
   ],
   declarations: [AdminComponent]
 })
-// @ts-ignore
 export class AdminModule { }

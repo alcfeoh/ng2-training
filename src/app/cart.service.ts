@@ -14,11 +14,11 @@ export class CartService {
     return this.http.get<LicensePlate[]>('http://localhost:8000/cart');
   }
 
-  addToCart(plate: LicensePlate): Observable<any> {
+  addToCart(plate: LicensePlate): Observable<unknown> {
     return this.http.put('http://localhost:8000/cart/' + plate._id, null);
   }
 
-  removeFromCart(plate: LicensePlate): Observable<any> {
+  removeFromCart(plate: LicensePlate): Observable<unknown> {
     return this.http.delete('http://localhost:8000/cart/' + plate._id);
   }
 

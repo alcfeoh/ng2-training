@@ -16,7 +16,8 @@
       ],
       "rules": {
         "@typescript-eslint/no-explicit-any": "error",
-        "no-var": "off"
+        "no-var": "off",
+        "@angular-eslint/no-output-on-prefix" : "off"
       }
     },
     {

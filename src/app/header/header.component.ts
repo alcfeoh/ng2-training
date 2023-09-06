@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {LoginService} from "../router/login/login.service";
 
 @Component({
@@ -9,6 +9,5 @@ import {LoginService} from "../router/login/login.service";
 export class HeaderComponent {
 
   constructor(public loginService: LoginService) { }
-
 
 }

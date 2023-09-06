@@ -10,8 +10,6 @@ export class CurrencySwitcherComponent {
 
   showItems = false;
 
-  constructor() { }
-
   changeCurrency(currency: Currency): void {
     // TODO
   }

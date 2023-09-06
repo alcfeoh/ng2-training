@@ -12,7 +12,7 @@ export class LoginComponent {
 
   login(username: string, password: string): void {
     this.loginService.login(username, password)
-      .subscribe(token => console.log('Successfully logged in'));
+      .subscribe(() => console.log('Successfully logged in'));
   }
 
 }

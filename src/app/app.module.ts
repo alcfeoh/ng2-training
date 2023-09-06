@@ -12,7 +12,6 @@ import { DialogComponent } from './dialog/dialog.component';
 import { HeaderComponent } from './header/header.component';
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CartService } from './cart.service';
 import {CurrencySwitcherComponent} from './currency-switcher/currency-switcher.component';
 import {TokenInterceptorService} from './token-http-interceptor.service';
 import {CheckoutFormComponent} from './checkout-form/checkout-form.component';

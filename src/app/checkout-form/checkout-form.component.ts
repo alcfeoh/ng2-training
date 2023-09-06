@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class CheckoutFormComponent {
 
-  constructor() { }
-
   logForm(value: object): void {
     console.log(value);
   }

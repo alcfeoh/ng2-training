@@ -8,7 +8,6 @@ import { HelloComponent } from './hello/hello.component';
 import { routing } from './app.routing';
 import {LoginComponent} from "./router/login/login.component";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import { DialogComponent } from './dialog/dialog.component';
 import { HeaderComponent } from './header/header.component';
 import {LicensePlateComponent} from './license-plate/license-plate.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -22,7 +21,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
-    LoginComponent, DialogComponent, HeaderComponent,
+    LoginComponent, HeaderComponent,
     CarouselComponent, CurrencySwitcherComponent,
     CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
   ],

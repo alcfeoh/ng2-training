@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/alcfeoh/ng2-training.png)](https://travis-ci.org/alcfeoh/ng2-training)
 
-This project is updated for Angular 16 with Angular CLI 16.
+This project was updated for Angular 16 with Angular CLI 16. It won't be upgraded to Angular 17. Instead, visit: `https://github.com/alcfeoh/ngx-training`
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -17,13 +17,15 @@ import {CheckoutFormComponent} from './checkout-form/checkout-form.component';
 import {CheckoutViewComponent} from './checkout-view/checkout-view.component';
 import {CartViewComponent} from './cart-view/cart-view.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { CurrencyRendererPipe } from './currency-renderer.pipe';
+import { TestTabsComponent } from './test-tabs/test-tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent, HelloComponent, LicensePlateComponent,
     LoginComponent, HeaderComponent,
     CarouselComponent, CurrencySwitcherComponent,
-    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent
+    CheckoutFormComponent, CheckoutViewComponent, CartViewComponent, JumbotronComponent, CurrencyRendererPipe, TestTabsComponent
   ],
   imports: [
     BrowserModule,
